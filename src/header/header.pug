@@ -1,18 +1,21 @@
 header
-    img(src="../images/logo.svg", alt="")
-    nav
-        ul
-            li
-                a(href="") О нас
-            li
-                a(href="") Услуги
-            li
-                a(href="") Вакансии
-            li
-                a(href="") Новости
-            li
-                a(href="") Соглашения
-    a(href="") Войти
-    a(href="") Зарегистрироватся
-
-             
+    div.header
+        img(src=require("../images/Logo.png").default, alt="logo").header_logo
+        nav.header_nav-menu
+            ul.header_nav-menu_list
+                li.header_nav-menu_list_item
+                    a(href="") О нас
+                li.header_nav-menu_list_item
+                    a(href="") Услуги 
+                
+                li.header_nav-menu_list_item
+                    a(href="") Вакансии
+                li.header_nav-menu_list_item
+                    a(href="") Новости
+                li.header_nav-menu_list_item
+                    
+                    a(href="") Соглашения
+        
+        .header_button
+            a(href="").header_button-login Войти
+            a(href="").header_button-registration Зарегистрироватся

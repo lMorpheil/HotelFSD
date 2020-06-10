@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    width: 1080px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header_logo {
+    padding: 15px 0 15px 0;
+}
+.header_nav-menu{
+    flex: auto;
+    
+}
+.header_nav-menu_list {
+    display: flex;
+    justify-content: flex-end; 
+}
+.header_nav-menu_list_item {
+    list-style: none;
+    margin-right: 20px;
+}
+.header_nav-menu_list_item a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: rgba(31, 32, 65, 0.5);
+}
+.header_button {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+.header_button-login {
+    margin-right: 20px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 22px;
+   //border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+   //border-image-slice: 1;
+    width: 87px;
+    height: 34px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
+}
+.grounded-radiants::after {
+    top: -11px; bottom: -11px;
+    left: -11px; right: -11px;
+    content: '';
+    z-index: -1;
+    border-radius: 22px;
+}
+.header_button-registration {
+    margin-right: 20px;
+    text-decoration: none;
+    width: 196px;
+    height: 34px;
+    border-radius: 22px;
+    display: inline-block;
+    text-align: center;
+    line-height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #fff;
+}
