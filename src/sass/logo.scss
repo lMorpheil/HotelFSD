@@ -1,0 +1,12 @@
+.logo { 
+    &_grey {
+        background: url( /src/images/logo-grey.svg);
+        width: 48px;
+        height: 48px;
+     }
+    &_color {
+        background: url(/src/images/Logo-color.svg);
+        width: 48px;
+        height: 48px;
+    }
+}
