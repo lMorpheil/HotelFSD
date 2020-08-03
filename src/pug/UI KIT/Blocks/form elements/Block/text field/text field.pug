@@ -1,0 +1,14 @@
+mixin textfield(type,id,place,width,title,subtitle)
+    div.text-field
+        label(class="text-field__label"
+            for=`${id}`)
+            span.text-field__title=title
+            span.text-field__subtitle=subtitle
+        input(
+            id=`${id}`
+            type=(type == "subscription") ? "email" : "text"  
+            class=(type == "subscription") ? "text-field__subscription" : `text-field__input`
+            placeholder=`${place}` 
+            style=`width: ${width}`
+            checked)
+
