@@ -1,6 +1,7 @@
 mixin textfield(type,id,place,width,title,subtitle)
     div.text-field
         label(class="text-field__label"
+            style=`width: ${width}`
             for=`${id}`)
             span.text-field__title=title
             span.text-field__subtitle=subtitle

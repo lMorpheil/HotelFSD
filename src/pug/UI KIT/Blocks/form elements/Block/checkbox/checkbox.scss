@@ -1,0 +1,26 @@
+.checkbox__input {
+    display: none;
+        +label {
+            color: $Dark50;
+            font-family: $fMont;
+            font-size: 14px;
+            line-height: 18px;
+            display: inline-flex;
+            align-items: center;
+        }
+        +label::before {
+            border: 1px solid $Dark25;
+            box-sizing: border-box;
+            border-radius: 4px;
+            display: inline-block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+}
+.checkbox__input:checked + label::before {
+    background: url(/src/images/Vector.svg) center center no-repeat;
+}

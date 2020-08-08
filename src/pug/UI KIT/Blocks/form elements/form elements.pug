@@ -1,4 +1,6 @@
 include Block/text field/text field.pug
+include Block/checkbox/checkbox.pug
+include Block/radio/radio.pug
 +logo("grey")
 div.wrapper
     div.content
@@ -7,4 +9,9 @@ div.wrapper
         div.wrap
             +textfield("text","text-hover","This is pretty awesome","320px","Text Field","Hover / Focus")
         div.wrap
-            +textfield("subscription","email","Email","320px","subscription text field")
+            +textfield("subscription","sub","Email","320px","subscription text field")
+    div.middle
+        +checkbox("vipe","Можно курить")
+        +checkbox("pet", "Можно с питомцами","checked")
+        +checkbox("guest", "Можно пригласить гостей (до 10 человек)","checked")
+        +radio("radio","Мужчина")
