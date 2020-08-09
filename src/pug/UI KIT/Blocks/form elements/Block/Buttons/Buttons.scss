@@ -1,0 +1,84 @@
+.button_background_dark {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border: 0px;
+    border-radius: 22px;
+    width: 99px;
+    height: 44px;
+    cursor: pointer;
+        &:active, &:focus {
+            outline: 0px transparent;
+        }
+}
+.button_background_light {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.5;
+    border: 0px;
+    border-radius: 22px;
+    width: 99px;
+    height: 44px;
+    cursor: pointer;
+        &:active, &:focus {
+            outline: 0px transparent;
+        }
+}
+.button_text_dark {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    background: #fff;
+    width: 99px;
+    height: 44px;
+    cursor: pointer;
+    border: double 2px transparent;
+    border-radius: 22px;
+    background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+        &:active, &:focus {
+            outline: 0px transparent;
+        }
+}
+.button_text_light {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    background: #fff;
+    width: 99px;
+    height: 44px;
+    cursor: pointer;
+    border: double 2px transparent;
+    border-radius: 22px;
+    background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-origin: border-box;
+    opacity: 0.5;
+    background-clip: content-box, border-box;
+        &:active, &:focus {
+            outline: 0px transparent;
+        }
+}
+.arrow {
+    background: url(/src/images/arrow_forward-white.svg) 95% center no-repeat,
+    linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}

@@ -1,7 +1,9 @@
-@import "pug/UI KIT/Blocks/form elements/Block/text field/text field";
-@import "pug/UI KIT/Blocks/form elements/Block/checkbox/checkbox";
-@import "pug/UI KIT/Blocks/form elements/Block/radio/radio";
-@import "pug/UI KIT/Blocks/form elements/Block/toggle/toggle";
+@import "pug/UI KIT/Blocks/form elements/Block/text field/text field.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/checkbox/checkbox.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/radio/radio.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/toggle/toggle.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/Buttons/Buttons.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/link/link.scss";
 .wrapper {
     padding-top: 85px;
 }

@@ -18,13 +18,13 @@
             margin-right: 10px;
             flex-grow: 0;
             flex-shrink: 0;
+            cursor: pointer;
         }
 }
-
 .radio__input:checked {
     +label::before {
-    background: url(/src/images/Rectangle.svg) center center no-repeat;
-    border: 1px solid $purple;
+        background: url(/src/images/Rectangle.svg) center center no-repeat;
+        border: 1px solid $purple;
     }
     +label {
         color: $Dark75;

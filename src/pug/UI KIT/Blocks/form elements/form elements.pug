@@ -2,6 +2,8 @@ include Block/text field/text field.pug
 include Block/checkbox/checkbox.pug
 include Block/radio/radio.pug
 include Block/toggle/toggle.pug
+include Block/Buttons/Buttons.pug
+include Block/link/link.pug
 +logo("grey")
 div.wrapper
     .content-left
@@ -15,8 +17,19 @@ div.wrapper
         +checkbox("vipe","Можно курить")
         +checkbox("pet", "Можно с питомцами","checked")
         +checkbox("guest", "Можно пригласить гостей (до 10 человек)","checked")
-        +radio("radio","Мужчина","radio")
+        +radio("radio1","Мужчина","radio","checked")
         +radio("radio2","Женщина","radio")
         +toggle("toggle-on","Получать спецпредложения","checked")
         +toggle("toggle-off","Получать спецпредложения")
     .content-right
+        .wrap
+            +button("click me","","background","dark")
+            +button("click me","","background")
+        .wrap
+            +button("click me","","","dark")
+            +button("click me")
+        .wrap
+            +link("Click me","color")
+            +link("Click me")
+        .wrap
+            +button("перейти к оплате","320px","background","dark","arrow")

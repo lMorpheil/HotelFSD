@@ -19,6 +19,7 @@
             flex-grow: 0;
             flex-shrink: 0;
             margin-right: 10px;
+            cursor: pointer;
         }
 }
 .checkbox__input:checked + label::before {
