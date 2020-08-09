@@ -1,32 +1,29 @@
-.radio__input {
-   display: none;
+.toggle__input {
+    display: none;
         +label {
             font-family: $fMont;
             font-size: 14px;
             line-height: 24px;
             display: inline-flex;
             align-items: center;
-            color: $Dark50;
+            color: $Dark75;
         }
         +label::before {
             border: 1px solid $Dark25;
             border-radius: 10px;
-            width: 20px;
+            width: 40px;
             height: 20px;
             display: inline-block;
             content: "";
             margin-right: 10px;
             flex-grow: 0;
             flex-shrink: 0;
+            background: url(/src/images/Rectangle-toggle-off.svg) 4px center no-repeat;
         }
 }
-
-.radio__input:checked {
-    +label::before {
-    background: url(/src/images/Rectangle.svg) center center no-repeat;
-    border: 1px solid $purple;
-    }
-    +label {
-        color: $Dark75;
-    }
+.toggle__input:checked {
+        +label::before {
+            background: url(/src/images/Rectangle-toggle-on.svg) 24px center no-repeat;
+            border: 1px solid $purple;
+        }
 }

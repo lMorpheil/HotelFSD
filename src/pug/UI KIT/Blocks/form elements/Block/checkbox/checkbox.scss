@@ -5,8 +5,8 @@
             font-family: $fMont;
             font-size: 14px;
             line-height: 18px;
-            display: inline-flex;
-            align-items: center;
+            display: inline-flex;  
+            max-width: 190px;
         }
         +label::before {
             border: 1px solid $Dark25;
