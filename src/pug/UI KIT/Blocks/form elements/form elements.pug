@@ -1,9 +1,4 @@
-include Block/text field/text field.pug
-include Block/checkbox/checkbox.pug
-include Block/radio/radio.pug
-include Block/toggle/toggle.pug
-include Block/Buttons/Buttons.pug
-include Block/link/link.pug
+include ../../mixin
 +logo("grey")
 div.wrapper
     .content-left
@@ -14,14 +9,18 @@ div.wrapper
         .wrap
             +textfield("subscription","sub","Email","320px","subscription text field")
     .content-middle
-        +checkbox("vipe","Можно курить")
-        +checkbox("pet", "Можно с питомцами","checked")
-        +checkbox("guest", "Можно пригласить гостей (до 10 человек)","checked")
-        +radio("radio1","Мужчина","radio","checked")
-        +radio("radio2","Женщина","radio")
-        +toggle("toggle-on","Получать спецпредложения","checked")
-        +toggle("toggle-off","Получать спецпредложения")
+        .wrap
+            +checkbox("vipe","Можно курить")
+            +checkbox("pet", "Можно с питомцами","checked")
+            +checkbox("guest", "Можно пригласить гостей (до 10 человек)","checked")
+        .wrap
+            +radio("radio1","Мужчина","radio","checked")
+            +radio("radio2","Женщина","radio")
+        .wrap
+            +toggle("toggle-on","Получать спецпредложения","checked")
+            +toggle("toggle-off","Получать спецпредложения")
     .content-right
+        +range()
         .wrap
             +button("click me","","background","dark")
             +button("click me","","background")
