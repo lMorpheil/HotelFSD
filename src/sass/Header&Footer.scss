@@ -1,20 +1,3 @@
-@import "pug/UI KIT/Blocks/Header&Footer/Blocks/menu.scss";
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1140px;
-    margin: 0 auto;
-}
-.header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
-    width: 303px;
-}
+@import "pug/UI KIT/Blocks/Header&Footer/Blocks/menu/menu.scss";
+@import "pug/UI KIT/Blocks/Header&Footer/Blocks/header/header.scss";
+@import "pug/UI KIT/Blocks/Header&Footer/Blocks/footer/footer.scss";

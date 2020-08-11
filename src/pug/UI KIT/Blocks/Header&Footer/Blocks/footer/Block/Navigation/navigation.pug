@@ -1,0 +1,14 @@
+mixin navigation(listFirst,listSecond,listThid)
+    ul.navigation
+        ul.navigation__list
+            each item in listFirst
+                li.navigation__item
+                    a(href=`${item.link}`)=item.title
+        ul.navigation__list
+            each item in listSecond
+                li.navigation__item
+                    a(href=`${item.link}`)=item.title
+        ul.navigation__list
+            each item in listThid
+                li.navigation__item
+                    a(href=`${item.link}`)=item.title

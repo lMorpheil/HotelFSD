@@ -1,0 +1,12 @@
+mixin header(login)
+    .header
+        +logo("color")
+        .header__wrapper
+            +menu
+            if login
+                .header__name
+                    p Юлий Цезарь
+            else
+                .header__buttons
+                    +button("Войти","87px","","dark","")
+                    +button("зарегистрироваться","196px","background","dark","")
