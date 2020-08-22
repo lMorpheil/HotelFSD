@@ -7,6 +7,9 @@
     text-transform: uppercase;
     color: $purple;
     text-decoration: none;
+        &:hover {
+            color: $Dark50;
+        }
 }
 .link_color_grey {
     font-family: $fMont;
