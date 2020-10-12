@@ -9,7 +9,8 @@ const css = require("./webpack/css");
 const extractCSS = require("./webpack/css.extract");
 const uglifyJS = require("./webpack/js.uglify");
 const images = require("./webpack/images");
-const fonts = require("./webpack/fonts")
+const fonts = require("./webpack/fonts");
+
 
 
 const PATHS = {
@@ -31,6 +32,8 @@ const common = merge([
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",
+        "window.jQuery": "jquery'",
+        "window.$": "jquery",
       }),
     ],
   },
