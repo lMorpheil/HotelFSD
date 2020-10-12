@@ -1,6 +1,6 @@
-mixin range()
-    div
-        p
-            label(for="amount") Price range:
-            input(type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;")
+mixin range(Range)
+    div.range
+        p(class="range__title")
+            label(for="amount" class="range__input_first")=Range
+            input(class="range__input_second" type="text" id="amount" readonly)
         div(id="slider-range")
