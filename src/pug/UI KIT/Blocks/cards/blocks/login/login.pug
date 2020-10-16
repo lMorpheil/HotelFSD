@@ -1,0 +1,11 @@
+mixin login()
+    div(class="login")
+        h1(class="login__title") Войти
+        div(class="login__email")
+            +textfield("email", "email","Email","320px")
+        div(class="login__password")
+            +textfield("password","password","Пароль","320px")
+        +button("Войти","320px","background","dark","arrow")
+        div(class="login__creating")
+            p Нет аккаунта на Toxin?
+            +button("Создать","99","","dark")

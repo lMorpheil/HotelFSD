@@ -32,8 +32,8 @@
             line-height: 18px;
             color: $Dark25;
         }
-        &:hover, &:focus {
-            border: 1px solid $Dark50;
+        &:hover, &:focus, &:active {
+            border: 1px solid $Dark50;s
             &::placeholder {
                 color: $Dark75;
                 line-height: 24px;

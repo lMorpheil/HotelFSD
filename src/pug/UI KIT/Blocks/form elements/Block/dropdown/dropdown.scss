@@ -1,0 +1,24 @@
+select {
+    width: 266px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+option {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+/* identical to box height */
+
+    text-transform: uppercase;
+
+/* Dark 100% */
+
+    color: #1F2041;
+}
