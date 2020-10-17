@@ -30,10 +30,12 @@ const common = merge([
         template: PATHS.source + "/index.pug",
       }),
       new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery'",
-        "window.$": "jquery",
+        $: 'jquery',
+        jquery: 'jquery',
+        jQuery: 'jquery',
+        'window.jquery': 'jquery',
+        'window.jQuery': 'jquery',
+        'window.$': 'jquery'
       }),
     ],
   },

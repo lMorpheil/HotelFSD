@@ -1,4 +1,4 @@
-mixin textfield(type,id,place,width,title,subtitle)
+mixin textfield(type, id, place, width, title, subtitle, mask)
     div.text-field
         if(title == undefined || subtitle == undefined)
         else
@@ -10,8 +10,10 @@ mixin textfield(type,id,place,width,title,subtitle)
         input(
             id=`${id}`
             type=(type == "subscription") ? "email" : 
-                (type == "password") ? "password" : "text"  
-            class=(type == "subscription") ? "text-field__subscription" : `text-field__input`
+                (type == "password") ? "password" : 
+                (type == "date") ? "date" : "text"  
+            class=(type == "subscription") ? "text-field__subscription" : 
+            ( mask != undefined ) ? 'text-filed__input_date' : 'text-field__input'
             placeholder=`${place}` 
             style=`width: ${width}`
             checked)

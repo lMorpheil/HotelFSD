@@ -3,13 +3,15 @@ include ../../mixin
 div.wrapper
     .content-left
         .wrap
-            +textfield("email", "email","Email","320px", "Text Field","Default")
+            +textfield("email", "email_1","Email","320px", "Text Field","Default")
         .wrap
             +textfield("text","text-hover","This is pretty awesome","320px","Text Field","Hover / Focus")
         .wrap
             +textfield("subscription","sub","Email","320px","subscription text field")
         .wrap
             +dropdown
+        .wrap
+            +textfield("text", "date","ДД.ММ.ГГГГ","320px", "masked text field","", "date")
     .content-middle
         .wrap
             +checkbox("vipe","Можно курить")
