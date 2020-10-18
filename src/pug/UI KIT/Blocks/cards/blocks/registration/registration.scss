@@ -1,0 +1,42 @@
+.registration {
+    width: 380px;
+    height: 646px;
+    padding: 40px 30px 30px 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.registration__title {
+    font-family: fQuick;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $Dark100;
+    margin-bottom: 20px;
+}
+.registration__input {
+    margin-bottom: 10px;
+}
+.registration__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding:  0 99px 23px 0;
+}
+.registration__email {
+    padding: 20px 0 10px 0;
+}
+.registration__password {
+    padding-bottom: 10px;   
+}
+.registration__toggle {
+    padding-bottom: 24px;
+}
+.registration__login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
