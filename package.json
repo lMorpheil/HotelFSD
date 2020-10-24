@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "cleave.js": "^1.6.0",
     "jquery": "^3.5.1",
     "jquery.maskedinput": "^1.4.1",

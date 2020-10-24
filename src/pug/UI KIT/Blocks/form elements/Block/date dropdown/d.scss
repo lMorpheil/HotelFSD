@@ -1,0 +1,94 @@
+
+.datepicker-inline .datepicker {
+  position: static;
+  left: auto;
+  right: auto;
+  width: 320px;
+  height: 369px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px; 
+  
+}
+.datepicker--cell {
+border-radius: 4px;
+box-sizing: border-box;
+cursor: pointer;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+position: relative;
+-webkit-align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+height: 32px;
+z-index: 1; 
+
+
+width: 39.88px;
+height: 40px;
+
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Dark 50% */
+
+color: rgba(31, 32, 65, 0.5);
+}
+        .datepicker--cell.-focus- {
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 22px;
+        .datepicker--cell.-current- {
+          color: #4EB5E6; }
+          .datepicker--cell.-current-.-focus- {
+            color: #4a4a4a; }
+          .datepicker--cell.-current-.-in-range- {
+            color: #4EB5E6; }
+        .datepicker--cell.-in-range- {
+          background: rgba(92, 196, 239, 0.1);
+          color: #4a4a4a;
+          border-radius: 0; }
+          .datepicker--cell.-in-range-.-focus- {
+            background-color: rgba(92, 196, 239, 0.2); }
+        .datepicker--cell.-disabled- {
+          cursor: default;
+          color: #aeaeae; }
+          .datepicker--cell.-disabled-.-focus- {
+            color: #aeaeae; }
+          .datepicker--cell.-disabled-.-in-range- {
+            color: #a1a1a1; }
+          .datepicker--cell.-disabled-.-current-.-focus- {
+            color: #aeaeae; }
+        .datepicker--cell.-range-from- {
+          border: 1px solid rgba(92, 196, 239, 0.5);
+          background-color: rgba(92, 196, 239, 0.1);
+          border-radius: 4px 0 0 4px; }
+        .datepicker--cell.-range-to- {
+          border: 1px solid rgba(92, 196, 239, 0.5);
+          background-color: rgba(92, 196, 239, 0.1);
+          border-radius: 0 4px 4px 0; }
+        .datepicker--cell.-range-from-.-range-to- {
+          border-radius: 4px; }
+        .datepicker--cell.-selected- {
+          color: #fff;
+          border: none;
+          background: #5cc4ef; }
+          .datepicker--cell.-selected-.-current- {
+            color: #fff;
+            background: #5cc4ef; }
+          .datepicker--cell.-selected-.-focus- {
+            background: #45bced; }
+        .datepicker--cell:empty {
+          cursor: default; }
