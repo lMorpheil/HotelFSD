@@ -7,22 +7,22 @@ $Dark5: rgba(31, 32, 65, 0.05);
 $purple: #BC9CFF;
 $green: #6FCF97;
 
-.logo_grey {
-    margin: 30px 0 0 30px;
+.colors__wrapper {
+    background: #fff;
+    padding: 30px 191px 145px 30px;
+    max-width: 1440px;
 }
-.wrapper {
+.colors__wrap {
     display: flex;
     justify-content: space-between;
-    max-width: 1100px;
     margin: 0 auto;
-    padding-top: 67px;
-    
+    padding: 67px 0 0 150px;
 }
 li {
     list-style-type: none;
     color: $Dark100;
 }
-.colors li {
+.colors__color li {
     position: relative;
     width: 70px;
     height: 70px;
@@ -197,7 +197,7 @@ li {
         }
     }
 }
-.titles li {
+.colors__titles li {
     margin-bottom: 50px;
     position: relative;
     &:nth-child(1) {

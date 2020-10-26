@@ -1,24 +1,77 @@
-select {
-    width: 266px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    box-sizing: border-box;
-    border-radius: 2px;
-}
-option {
-    background: #FFFFFF;
-    box-sizing: border-box;
-    font-family: Montserrat;
+.dropdown__label {
+    font-family: $fMont;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-/* identical to box height */
-
     text-transform: uppercase;
-
-/* Dark 100% */
-
-    color: #1F2041;
+    color: $Dark100;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.dropdown__input {
+    width: 266px;
+    height: 44px;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: url(/src/images/expand_more.svg) 95% center no-repeat;
+    padding-left: 15px;
+    &::placeholder {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $Dark75;
+    }
+}
+.dropdown__window {
+    border: 1px solid $Dark50;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px $Dark5;
+    padding: 7px 7px 8px 15px;
+    border-radius: 0 0 4px 4px;
+    width: 266px;
+}
+.dropdown__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+    padding-bottom: 7px;
+    &:last-child {
+        padding-bottom: 0px;
+    }
+}
+.dropdown__minus, .dropdown__plus {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: #fff;
+    cursor: pointer;
+    color: $Dark50;
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    &:hover, &:active, &:visited, &:focus {
+        outline: none;
+    }
+}
+.dropdown__number {
+    width: 32px;
+    border: hidden;
+    &:hover, &:active, &:visited, &:focus {
+        outline: none;
+    }
 }

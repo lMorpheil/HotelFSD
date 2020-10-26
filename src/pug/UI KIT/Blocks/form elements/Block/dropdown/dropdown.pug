@@ -1,5 +1,27 @@
-mixin dropdown
-    select(size="1" multiple)
-        option(value="спальни") спальни
-        option(value="кровати") кровати
-        option(value="Ванные комнаты") Ванные комнаты
+mixin dropdown(place, id, name, title)
+    div(class="dropdown")
+        div(class="dropdown__wraplabel")
+            label(for=`${id}` class="dropdown__label") 
+                span=`${name}`
+                span=`${title}`
+        input(type="text" class="dropdown__input" placeholder=`${place}` id=`${id}`)
+        div(class="dropdown__window")
+            div(class="dropdown__item")
+                label(for="" class="dropdown__label") Спальни
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" class="dropdown__number")
+                    button(type="submit" class="dropdown__plus") +
+            div(class="dropdown__item")
+                label(for="" class="dropdown__label") Кровати
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" class="dropdown__number")
+                    button(type="submit" class="dropdown__plus") +
+            div(class="dropdown__item")
+                label(for="" class="dropdown__label") Ванные комнаты
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" class="dropdown__number")
+                    button(type="submit" class="dropdown__plus") +
+

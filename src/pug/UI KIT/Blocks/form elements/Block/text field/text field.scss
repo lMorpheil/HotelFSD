@@ -33,7 +33,8 @@
             color: $Dark25;
         }
         &:hover, &:focus, &:active {
-            border: 1px solid $Dark50;s
+            border: 1px solid $Dark50;
+            outline: none;
             &::placeholder {
                 color: $Dark75;
                 line-height: 24px;

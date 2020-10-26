@@ -1,3 +1,10 @@
-include Blocks/form elements/form elements.pug
+include ./mixin.pug
+section(class="uikit__wrapper")
+    span Colors & Type
+    +colorsandtype
+section(class="uikit__wrapper")
+    span Form Elements
+    +formElements
+
 include Blocks/cards/cards.pug
 include Blocks/Header&Footer/Header&Footer.pug
