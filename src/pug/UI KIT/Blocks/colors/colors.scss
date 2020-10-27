@@ -18,16 +18,15 @@ $green: #6FCF97;
     margin: 0 auto;
     padding: 67px 0 0 150px;
 }
-li {
-    list-style-type: none;
-    color: $Dark100;
-}
+
 .colors__color li {
     position: relative;
     width: 70px;
     height: 70px;
     border-radius: 6px;
     margin-bottom: 20px;
+    list-style-type: none;
+    color: $Dark100;
     &:nth-child(1) {
         background: $Dark100;
         &::after {
@@ -200,6 +199,8 @@ li {
 .colors__titles li {
     margin-bottom: 50px;
     position: relative;
+    list-style-type: none;
+    color: $Dark100;
     &:nth-child(1) {
         font-family: $fQuick;
         font-style: normal;
