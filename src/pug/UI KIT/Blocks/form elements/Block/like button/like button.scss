@@ -1,0 +1,31 @@
+.likebutton {
+    width: 40px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0 4px 0 20px;
+    cursor: pointer;
+    background: url(/src/images/favorite_border.svg) 20% center no-repeat;
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: $Dark25;
+    &:active, &:hover, &:focus, &:visited {
+        outline: none;
+    }
+    &:hover {
+        border: 1px solid linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+        background: url(/src/images/favorite.svg) 20% center no-repeat;
+        color: $purple;
+    }
+}
+.likebutton_onclick {
+    background: url(/src/images/favorite.svg) 20% center no-repeat;
+    border: 1px solid linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+    color: $purple;
+}

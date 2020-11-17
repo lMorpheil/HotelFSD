@@ -57,7 +57,7 @@
     cursor: pointer;
     border: double 2px transparent;
     border-radius: 22px;
-    background-image: linear-gradient(white, white), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-image: linear-gradient(white, white), linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
     background-origin: border-box;
     background-clip: content-box, border-box;
         &:active, &:hover {
