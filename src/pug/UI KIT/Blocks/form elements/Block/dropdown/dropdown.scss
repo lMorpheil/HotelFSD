@@ -33,6 +33,7 @@
     padding: 7px 7px 8px 15px;
     border-radius: 0 0 4px 4px;
     width: 266px;
+    z-index: 1;
 }
 .dropdown__item {
     display: flex;
@@ -71,6 +72,7 @@
 .dropdown__number {
     width: 32px;
     border: hidden;
+    text-align: center;
     &:hover, &:active, &:visited, &:focus {
         outline: none;
     }

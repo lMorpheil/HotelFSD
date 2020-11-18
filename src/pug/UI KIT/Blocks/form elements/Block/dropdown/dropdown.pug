@@ -1,4 +1,4 @@
-mixin dropdown(place, id, name, title)
+mixin dropdown(place, id, name, title, bed)
     div(class="dropdown")
         div(class="dropdown__wraplabel")
             label(for=`${id}` class="dropdown__label") 
@@ -7,10 +7,10 @@ mixin dropdown(place, id, name, title)
         input(type="text" class="dropdown__input" placeholder=`${place}` id=`${id}`)
         div(class="dropdown__window" date-drop)
             div(class="dropdown__item")
-                label(for="" class="dropdown__label") Спальни
+                label(for="bedroom" class="dropdown__label") Спальни
                 div
                     button(type="submit" class="dropdown__minus") -
-                    input(type="text" class="dropdown__number")
+                    input(type="text" class="dropdown__number" id="bedroom" value=`${bed}`)
                     button(type="submit" class="dropdown__plus") +
             div(class="dropdown__item")
                 label(for="" class="dropdown__label") Кровати

@@ -1,0 +1,12 @@
+.ratebutton__button {
+    width: 24px;
+    height: 24px;
+    background: #fff url(/src/images/star_border.svg) center center no-repeat;
+    border: none;
+    &:hover, &:active, &:focus, &:visited {
+        outline: none;
+    }
+}
+.ratebutton__button_active {
+    background: #fff url(/src/images/star.svg) center center no-repeat;
+}
