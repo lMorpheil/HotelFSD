@@ -12,6 +12,12 @@
 .dropdown__input {
     width: 266px;
     height: 44px;
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $Dark75;
     border: 1px solid $Dark25;
     box-sizing: border-box;
     border-radius: 4px;
@@ -20,24 +26,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
-    &::placeholder {
-        font-family: $fMont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 24px;
-        color: $Dark75;
-    }
     &:hover, &:active, &:visited, &:focus {
         outline: none;
     }
 }
+.dropdown__input_border {
+    border-radius: 4px 4px 0 0;
+}
 .dropdown__window {
+    position: absolute;
     border: 1px solid $Dark50;
     box-sizing: border-box;
     box-shadow: 0px 10px 20px $Dark5;
     padding: 7px 7px 8px 15px;
     border-radius: 0 0 4px 4px;
+    background: #fff;
+    border-top: none;
     width: 266px;
     display:none;
     z-index: 1;
@@ -75,6 +79,9 @@
     &:hover, &:active, &:visited, &:focus {
         outline: none;
     }
+}
+.dropdown__minus_null {
+    border: 1px solid transparentize($Dark25, 0.1);
 }
 .dropdown__number {
     width: 32px;

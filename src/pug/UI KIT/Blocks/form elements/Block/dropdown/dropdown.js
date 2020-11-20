@@ -1,5 +1,3 @@
-const { event } = require("jquery");
-
 let minus = document.querySelectorAll('.dropdown__minus');
 let plus = document.querySelectorAll('.dropdown__plus');
 let input = document.querySelectorAll('.dropdown__number');
@@ -36,13 +34,16 @@ for (let i = 0; i < plus.length; i++) {
 //Работа с главным окном Input
 function getValue () {
     mainInput.value = `${input[0].value} спальни, ${input[1].value} кровати, ${input[2].value} ванны`;
+    if (mainInput.value.length > 20) {
+        mainInput.value = mainInput.value.substr(0, 20) + '...';
+    }
 }
 //Функция выпадающего окна
 function hidden () {
     dropDownWindow.classList.toggle('dropdown__window_hidden');
 }
 function hiddenOnDocument (event) {
-    if ( event.target !== mainInput  && !event.target.matches('dropdown__window>*')) {
+    if ( event.target !== mainInput  && !event.target.matches('[data-window]') ) {
         dropDownWindow.classList.remove('dropdown__window_hidden');
     }
 }

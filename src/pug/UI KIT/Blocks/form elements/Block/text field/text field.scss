@@ -24,14 +24,12 @@
         border: 1px solid $Dark25;
         border-radius: 4px;
         padding-left: 15px;
-        &::placeholder {
-            font-family: $fMont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 18px;
-            color: $Dark25;
-        }
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $Dark25;
         &:hover, &:focus, &:active {
             border: 1px solid $Dark50;
             outline: none;

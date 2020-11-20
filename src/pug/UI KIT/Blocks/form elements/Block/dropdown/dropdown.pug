@@ -1,27 +1,27 @@
-mixin dropdown(place, id, name, title, bed)
+mixin dropdown(id, name, title, item1, item2, item3, switcher)
     div(class="dropdown")
         div(class="dropdown__wraplabel")
             label(for=`${id}` class="dropdown__label") 
                 span=`${name}`
                 span=`${title}`
-        input(type="text" class="dropdown__input" readonly placeholder=`${place}` id=`${id}`)
+        input(type="text" class=( switcher ? "dropdown__input_border dropdown__input" : "dropdown__input" ) readonly id=`${id}`)
         div(class="dropdown__window" data-window)
             div(class="dropdown__item" data-window)
-                label(for="bedroom" class="dropdown__label" data-window) Спальни
-                div
+                label(for="bedroom" class="dropdown__label" data-window)=(switcher ? "Спальни" : "Взрослые")
+                div(data-window)
                     button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" class="dropdown__number" id="bedroom" value=`${bed}` data-window)
+                    input(type="text" class="dropdown__number" id="bedroom" value=`${item1}` data-window)
                     button(type="submit" class="dropdown__plus" data-window) +
             div(class="dropdown__item" data-window)
-                label(for="bed" class="dropdown__label" data-window) Кровати
-                div
+                label(for="bed" class="dropdown__label" data-window)=(switcher ? "Кровати" : "Дети")
+                div(data-window)
                     button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" id="bed" class="dropdown__number" data-window)
+                    input(type="text" id="bed" class="dropdown__number"  value=`${item2}` data-window)
                     button(type="submit" class="dropdown__plus" data-window) +
             div(class="dropdown__item" data-window)
-                label(for="bath" class="dropdown__label" data-window) Ванные комнаты
-                div
+                label(for="bath" class="dropdown__label" data-window)=(switcher ? "Ванные комнаты" : "Младенцы")
+                div(data-window)
                     button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" id="bath" class="dropdown__number" data-window)
+                    input(type="text" id="bath" class="dropdown__number" value=`${item3}` data-window)
                     button(type="submit" class="dropdown__plus" data-window) +
 
