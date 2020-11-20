@@ -17,6 +17,9 @@
     border-radius: 4px;
     background: url(/src/images/expand_more.svg) 95% center no-repeat;
     padding-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
     &::placeholder {
         font-family: $fMont;
         font-style: normal;
@@ -24,6 +27,9 @@
         font-size: 14px;
         line-height: 24px;
         color: $Dark75;
+    }
+    &:hover, &:active, &:visited, &:focus {
+        outline: none;
     }
 }
 .dropdown__window {
@@ -33,6 +39,7 @@
     padding: 7px 7px 8px 15px;
     border-radius: 0 0 4px 4px;
     width: 266px;
+    display:none;
     z-index: 1;
 }
 .dropdown__item {
@@ -76,4 +83,7 @@
     &:hover, &:active, &:visited, &:focus {
         outline: none;
     }
+}
+.dropdown__window_hidden {
+    display: block;
 }
