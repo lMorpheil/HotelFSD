@@ -1,3 +1,6 @@
+.checkbox {
+    width: 300px;
+}
 .checkbox__input {
     display: none;
         +label {
@@ -6,7 +9,7 @@
             font-size: 14px;
             line-height: 18px;
             display: inline-flex;  
-            max-width: 190px;
+            width: 240px;
         }
         +label::before {
             border: 1px solid $Dark25;

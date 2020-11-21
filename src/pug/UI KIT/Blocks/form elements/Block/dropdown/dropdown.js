@@ -3,6 +3,8 @@ let plus = document.querySelectorAll('.dropdown__plus');
 let input = document.querySelectorAll('.dropdown__number');
 let mainInput = document.querySelector('.dropdown__input');
 let dropDownWindow = document.querySelector('.dropdown__window');
+let label = document.querySelector('.dropdown__label');
+let mainInputDataBorder = document.querySelector('[data-border]');
 
 //Задаём значение input если значение не задано
 for (let i = 0; i < input.length; i++) {
@@ -33,10 +35,14 @@ for (let i = 0; i < plus.length; i++) {
 }
 //Работа с главным окном Input
 function getValue () {
-    mainInput.value = `${input[0].value} спальни, ${input[1].value} кровати, ${input[2].value} ванны`;
-    if (mainInput.value.length > 20) {
-        mainInput.value = mainInput.value.substr(0, 20) + '...';
-    }
+    if (label.innerHTML == 'Взрослые') {
+        mainInput.value = 'Сколько гостей';
+    } else {
+        mainInput.value = `${input[0].value} спальни, ${input[1].value} кровати, ${input[2].value} ванны`;
+        if (mainInput.value.length > 20) {
+            mainInput.value = mainInput.value.substr(0, 20) + '...';
+        }
+    } 
 }
 //Функция выпадающего окна
 function hidden () {
@@ -47,6 +53,20 @@ function hiddenOnDocument (event) {
         dropDownWindow.classList.remove('dropdown__window_hidden');
     }
 }
+function addBorder () {
+    if (mainInputDataBorder) {
+        mainInputDataBorder.classList.toggle('dropdown__input_border');
+    }
+}
+function addwindowBorder (event) {
+    if ( event.target !== mainInput  && !event.target.matches('[data-window]') ) {
+        if (mainInputDataBorder) {
+            mainInputDataBorder.classList.remove('dropdown__input_border');
+        }
+    }
+}
 //Обработчики события выпадающего окна
 mainInput.addEventListener('click', hidden);
+mainInputDataBorder.addEventListener('click', addBorder);
+window.addEventListener('click', addwindowBorder );
 window.addEventListener('click', hiddenOnDocument);
