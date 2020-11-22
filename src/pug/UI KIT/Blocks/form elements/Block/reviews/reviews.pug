@@ -1,0 +1,10 @@
+mixin reviews(img, name, date, like, visit, reviews)
+    div(class="reviews")
+        div(class="reviews__wrap")
+            img(src=`${img}`, alt="icon" class="reviews__image")
+            div(class="reviews__name")
+                span=name
+                p=date
+        div(class="reviews__like")
+            +likebutton(like, visit)
+            p(class="reviews__title")=reviews

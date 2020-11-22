@@ -11,6 +11,7 @@
 @import "pug/UI KIT/Blocks/form elements/Block/bullet list/bullet list.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/like button/like button.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/rate button/rate button.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/reviews/reviews.scss";
 
 .formElements__wrapper {
     background: #fff;
@@ -41,4 +42,9 @@
     display: flex;
     justify-content: space-between;
     width: 220px;
+}
+.formElement__wrap_end {
+    padding-top: 43px;
+    display: flex;
+    justify-content: space-between;
 }

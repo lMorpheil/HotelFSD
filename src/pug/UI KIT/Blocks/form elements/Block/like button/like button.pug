@@ -1,2 +1,2 @@
-mixin likebutton(value)
-    input(type="button" class="likebutton" value=`${value}`)
+mixin likebutton(value, switcher)
+    input(type="button" class=( switcher ? "likebutton likebutton_onclick" : "likebutton") value=`${value}`)
