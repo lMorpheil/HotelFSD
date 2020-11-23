@@ -30,6 +30,10 @@
         font-size: 14px;
         line-height: 18px;
         color: $Dark25;
+        &::placeholder {
+            color: $Dark25;
+            line-height: 24px;
+        }
         &:hover, &:focus, &:active {
             border: 1px solid $Dark50;
             outline: none;

@@ -28,7 +28,7 @@
 .formElements__wraper {
     margin-bottom: 20px;
     & .formElements__titlewrap {
-        padding-bottom: 40px;
+        padding-bottom: 16px;
     }
     & .formElements__title {
     font-family: $fMont;
@@ -38,8 +38,16 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $Dark100;
-    margin-bottom: 16px;
     }
+}
+.formElements__wraper_check {
+    margin-bottom: 40px;
+}
+.formElements_wraplist {
+    margin-top: 16px;
+}
+.formElements__wraper_rich {
+    margin-bottom: 10px;
 }
 .formElements__wraper_flex {
     display: flex;
@@ -57,6 +65,11 @@
 .formElements__wraper_checkboxlist {
     margin-bottom: 43px;
 }
-.formElements__richCheckbox {
-
+.formElements__like {
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+}
+.formElements__wraplike:last-child {
+    margin-left: 10px;
 }
