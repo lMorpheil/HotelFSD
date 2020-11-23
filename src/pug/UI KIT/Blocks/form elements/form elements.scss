@@ -12,6 +12,8 @@
 @import "pug/UI KIT/Blocks/form elements/Block/like button/like button.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/rate button/rate button.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/reviews/reviews.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/checkbox list/checkbox list.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/rich checkbox buttons/rich checkbox buttons.scss";
 
 .formElements__wrapper {
     background: #fff;
@@ -36,6 +38,7 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $Dark100;
+    margin-bottom: 16px;
     }
 }
 .formElements__wraper_flex {
@@ -47,4 +50,13 @@
     padding-top: 43px;
     display: flex;
     justify-content: space-between;
+}
+.formElements__wraper_open {
+    height: 277px;
+}
+.formElements__wraper_checkboxlist {
+    margin-bottom: 43px;
+}
+.formElements__richCheckbox {
+
 }

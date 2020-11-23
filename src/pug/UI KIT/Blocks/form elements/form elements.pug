@@ -52,7 +52,19 @@ mixin formElements()
                     +link("Click me")
                 div(class="formElements__wraper")
                     +button("перейти к оплате","320px","background","dark","arrow")
+        div(class="formElements__wrap formElement__wrap_end")
+            div(class="formElements__checkboxlist")
+                div(class="formElements__wraper formElements__wraper_checkboxlist")
+                    +checkboxList("expandable checkbox list", "", 1)
+                div(class="formElements__wraper formElements__wraper_open formElements__wraper_checkboxlist")
+                    +checkboxList("expandable checkbox list", "true", 2)
+            div
+                div(class="formElements__wraper formElements__richCheckbox")
+                    span(class="formElements__title") rich Checkbox Buttons
+                    +richCheckbox("rich_1", "<p><span>Широкий коридор</span>Ширина коридоров в номере<br/> не менее 91 см.</p>")
                 div(class="formElements__wraper")
+                    +richCheckbox("rich_2", "<p><span>Помощник для инвалидов</span> На 1 этаже вас встретит специалист  и проводит до номера.</p>")
+            div(class="formElements__wraper")
                 span(class="formElements__title") bullet list
                 +bullet
         div(class="formElements__wrap formElement__wrap_end")

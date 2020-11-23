@@ -1,6 +1,9 @@
 .checkbox {
     width: 300px;
 }
+.checkbox__label {
+    cursor: pointer;
+}
 .checkbox__input {
     display: none;
         +label {
