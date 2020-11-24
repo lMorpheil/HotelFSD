@@ -6,3 +6,4 @@ import "./pug/UI KIT/Blocks/form elements/Block/dropdown/dropdown.js";
 import "./pug/UI KIT/Blocks/form elements/Block/like button/like button.js";
 import "./pug/UI KIT/Blocks/form elements/Block/rate button/rate button.js";
 import "./pug/UI KIT/Blocks/form elements/Block/checkbox list/checkbox list.js";
+import "./pug/UI KIT/Blocks/form elements/Block/pagination/pagination.js";

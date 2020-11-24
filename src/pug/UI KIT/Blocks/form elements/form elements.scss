@@ -14,6 +14,7 @@
 @import "pug/UI KIT/Blocks/form elements/Block/reviews/reviews.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/checkbox list/checkbox list.scss";
 @import "pug/UI KIT/Blocks/form elements/Block/rich checkbox buttons/rich checkbox buttons.scss";
+@import "pug/UI KIT/Blocks/form elements/Block/pagination/pagination.scss";
 
 .formElements__wrapper {
     background: #fff;
@@ -72,4 +73,15 @@
 }
 .formElements__wraplike:last-child {
     margin-left: 10px;
+}
+.formElements__wraper_buttons {
+    padding-top: 40px;
+}
+.formElements__wraper_but {
+    margin-right: 19px;
+}
+.formElements__wraper_block {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
 }
