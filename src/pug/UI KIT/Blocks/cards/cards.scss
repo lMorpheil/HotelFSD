@@ -1,3 +1,20 @@
 @import "/blocks/login/login.scss";
 @import "/blocks/registration/registration.scss";
+@import "/blocks/searchroom/searchroom.scss";
 
+.cards {
+    background: #F4F4F6;
+    padding: 30px 0 0 30px;
+    max-width: 1440px;
+}
+.cards-wrap {
+    padding: 62px 0 0 72px;
+    display: flex;
+    justify-content: space-between;
+}
+.cards_colomn {
+    margin-right: 40px;
+    &:last-child {
+        margin-right: 0;
+    }
+}

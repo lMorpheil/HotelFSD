@@ -1,7 +1,18 @@
 mixin cards ()
-    +logo("grey")
-    .card-wrap
-        .wrap
-            +registration
-        .autorization
-            +login
+    div(class="cards")
+        +logo("grey")
+        div(class="cards-wrap")
+            div(class="cards_colomn")
+                div(class="cards__line")
+                    +searchroom()
+                div(class="cards__line")
+                    +registration
+            div(class="cards_colomn")
+                div(class="cards__line")
+                div(class="cards__line")
+                    .autoriz
+                        +login("loginUiKit")
+            div(class="cards_colomn")
+                div(class="cards__line")
+                div(class="cards__line")
+                div(class="cards__line")

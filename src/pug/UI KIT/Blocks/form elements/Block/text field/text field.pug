@@ -1,4 +1,4 @@
-mixin textfield(type, id, place, width, title, subtitle, mask)
+mixin textfield(type, id, place, width, title, subtitle, mask, form)
     div.text-field
         if(title == undefined || subtitle == undefined)
         else
@@ -9,6 +9,7 @@ mixin textfield(type, id, place, width, title, subtitle, mask)
                 span.text-field__subtitle=subtitle
         input(
             id=`${id}`
+            form=`${form}`
             type=(type == "subscription") ? "email" : 
                 (type == "password") ? "password" : 
                 (type == "date") ? "date" : "text"  
@@ -16,5 +17,5 @@ mixin textfield(type, id, place, width, title, subtitle, mask)
             ( mask != undefined ) ? 'text-filed__input_date' : 'text-field__input'
             placeholder=`${place}` 
             style=`width: ${width}`
-            checked)
-
+            checked
+            )

@@ -13,7 +13,6 @@ for (let i = 0; i < checkList.length; i++) {
 
     let hiddenList = function (event) {
         if ( event.target !== element  && !event.target.matches('[data-hidden]') && !event.target.matches('[class^=checkbox]') ) {
-            console.log(event.target)
             elem.classList.remove('checkboxlist__listwrapper_onclick');
             icon.classList.remove('checkboxlist__titlewrapper_onclick');
         }

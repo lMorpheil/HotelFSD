@@ -1,0 +1,19 @@
+.searchroom {
+    width: 380px;
+    height: 374px;
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px 30px 30px 30px;
+}
+.searchroom__title {
+    width: 300px;
+    font-family: $fQuick;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color:$Dark100;
+}

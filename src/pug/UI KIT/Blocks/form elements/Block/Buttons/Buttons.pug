@@ -1,12 +1,12 @@
-mixin button(text,width,background,dark,arrow)
+mixin button(text, width, background, dark, arrow, form)
     if background
         if dark
-            button(class="button_background_dark" class=`${arrow}` style=`width: ${width}`)=text
+            button(class="button_background_dark" class=`${arrow}` style=`width: ${width}` form=`${form}`)=text
         else
-            button(class="button_background_light" class=`${arrow}` style=`width: ${width}`)=text
+            button(class="button_background_light" class=`${arrow}` style=`width: ${width}` form=`${form}`)=text
     else
         if dark
-            button(class="button_text_dark" class=`${arrow}` style=`width: ${width}`)=text
+            button(class="button_text_dark" class=`${arrow}` style=`width: ${width}` form=`${form}`)=text
         else
-            button(class="button_text_light" class=`${arrow}` style=`width: ${width}`)=text
+            button(class="button_text_light" class=`${arrow}` style=`width: ${width}` form=`${form}`)=text
     

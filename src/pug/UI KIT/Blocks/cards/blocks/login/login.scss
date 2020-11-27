@@ -9,14 +9,14 @@
     padding: 40px 30px 32px 30px
 }
 .login__title {
-font-family: $fQuick;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 30px;
-color: $Dark100;
-padding-top: 20px;
-padding: 0; 
+    font-family: $fQuick;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: $Dark100;
+    padding-top: 20px;
+    padding: 0; 
 }
 .login__email {
     margin: 20px 0 10px 0;
@@ -29,4 +29,12 @@ padding: 0;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    & p {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    }
 }
