@@ -30,12 +30,10 @@ const common = merge([
         template: PATHS.source + "/index.pug",
       }),
       new webpack.ProvidePlugin({
-        $: 'jquery',
-        jquery: 'jquery',
-        jQuery: 'jquery',
-        'window.jquery': 'jquery',
-        'window.jQuery': 'jquery',
-        'window.$': 'jquery'
+        $: "jquery",
+        jQuery: "jquery",
+        "window.jQuery": "jquery'",
+        "window.$": "jquery"
       }),
     ],
   },
@@ -46,7 +44,7 @@ const common = merge([
 
 module.exports = function (env) {
   if (env === "production") {
-    return merge([common, extractCSS]);
+    return merge([common, extractCSS, css()]);
   }
   if (env === "development") {
     return merge([common, devserver(), sass(), css()]);

@@ -1,0 +1,25 @@
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+.date__label {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.date__input {
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+} 

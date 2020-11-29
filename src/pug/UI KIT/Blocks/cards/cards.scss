@@ -7,14 +7,17 @@
     padding: 30px 0 0 30px;
     max-width: 1440px;
 }
-.cards-wrap {
+.cards__wrap {
     padding: 62px 0 0 72px;
     display: flex;
     justify-content: space-between;
 }
-.cards_colomn {
+.cards__colomn {
     margin-right: 40px;
     &:last-child {
         margin-right: 0;
     }
+}
+.cards__line {
+    padding-bottom: 40px;
 }

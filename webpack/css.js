@@ -1,3 +1,5 @@
+const { ModuleFilenameHelpers } = require("webpack");
+
 module.exports = function (paths) {
   return {
     module: {
