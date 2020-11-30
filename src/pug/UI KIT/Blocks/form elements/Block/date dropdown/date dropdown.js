@@ -1,2 +1,1 @@
 require("air-datepicker");
-

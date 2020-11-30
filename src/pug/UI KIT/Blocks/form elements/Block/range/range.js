@@ -1,5 +1,4 @@
 require("webpack-jquery-ui");
-
 $( function() {
     $( "#slider-range" ).slider({
       range: true,
