@@ -1,2 +1,15 @@
-+room()
+mixin room(number, title,price)
     div(class="room")
+        div(class="room__slider")
+            img(src="/src/images/room-image.jpg", alt="номер")
+        div(class="room__wrapper")
+            h1(class="room__title") 
+                span №
+                = number
+                span= title
+            p(class="room__description")
+                span= `${price}`
+                span ₽ 
+                span в сутки
+        div(class="room__rate")
+            +ratebutton()
