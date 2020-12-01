@@ -1,28 +1,36 @@
-mixin dropdown(id, name, title, item1, item2, item3, switcher, width)
+mixin dropdown(id, name, title, item1, item2, item3, switcher, width,open,clear,apple)
     div(class="dropdown")
-        div(class="dropdown__wraplabel")
+        div(class="dropdown__wraplabel" style=`width: ${width}`)
             label(for=`${id}` class="dropdown__title") 
                 span=`${name}`
                 span=`${title}`
         input(style=`width: ${width}` type="text" 
-                class=( switcher ? "dropdown__input_border dropdown__input" : "dropdown__input") readonly id=`${id}` data-border=(switcher ? false : true) )
-        div(class="dropdown__window" data-window)
-            div(class="dropdown__item" data-window)
-                label(for="bedroom" class="dropdown__label" data-window)=(switcher ? "Спальни" : "Взрослые")
-                div(data-window)
-                    button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" class="dropdown__number" id=`${id}bedroom` value=`${item1}` data-window)
-                    button(type="submit" class="dropdown__plus" data-window) +
-            div(class="dropdown__item" data-window)
-                label(for="bed" class="dropdown__label" data-window)=(switcher ? "Кровати" : "Дети")
-                div(data-window)
-                    button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" id=`${id}bed` class="dropdown__number"  value=`${item2}` data-window)
-                    button(type="submit" class="dropdown__plus" data-window) +
-            div(class="dropdown__item" data-window)
-                label(for="bath" class="dropdown__label" data-window)=(switcher ? "Ванные комнаты" : "Младенцы")
-                div(data-window)
-                    button(type="submit" class="dropdown__minus" data-window) -
-                    input(type="text" id=`${id}bath` class="dropdown__number" value=`${item3}` data-window)
-                    button(type="submit" class="dropdown__plus" data-window) +
-
+                class=( switcher ? "dropdown__input_border dropdown__input" : "dropdown__input") 
+                class=(open ? "dropdown__input_border" : "")
+                readonly id=`${id}` data-border data-style= switcher ? true : false )
+        div(class=(open ? "dropdown__window dropdown__window_hidden" : "dropdown__window dropdown__input_border") data-window style=`width: ${width}`)
+            div(class="dropdown__item")
+                label(for="bedroom" class="dropdown__label")=(switcher ? "Спальни" : "Взрослые")
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" class="dropdown__number" id=`${id}bedroom` value=`${item1}`)
+                    button(type="submit" class="dropdown__plus") +
+            div(class="dropdown__item")
+                label(for="bed" class="dropdown__label")=(switcher ? "Кровати" : "Дети")
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" id=`${id}bed` class="dropdown__number"  value=`${item2}`)
+                    button(type="submit" class="dropdown__plus") +
+            div(class="dropdown__item")
+                label(for="bath" class="dropdown__label")=(switcher ? "Ванные комнаты" : "Младенцы")
+                div
+                    button(type="submit" class="dropdown__minus") -
+                    input(type="text" id=`${id}bath` class="dropdown__number" value=`${item3}`)
+                    button(type="submit" class="dropdown__plus") +
+            div(class="dropdown__buttons")
+                if (clear)
+                    +button("очистить","","","dark","","","","link" )
+                else
+                    div
+                if (apple)
+                    +button("применить","","","dark","","","","link" )

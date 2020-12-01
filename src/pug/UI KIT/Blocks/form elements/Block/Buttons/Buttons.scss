@@ -1,4 +1,4 @@
-.button_background_dark {
+.button__background_dark {
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -20,7 +20,7 @@
             outline: 0px transparent;
         }
 }
-.button_background_light {
+.button__background_light {
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -42,7 +42,7 @@
             outline: 0px transparent;
         }
 }
-.button_text_dark {
+.button__text_dark {
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -68,7 +68,7 @@
             background-image: linear-gradient(white, white), linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
         }
 }
-.button_text_light {
+.button__text_light {
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -94,4 +94,38 @@
 .arrow {
     background: url(/src/images/arrow_forward-white.svg) 95% center no-repeat,
     linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.button__link_colorful {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $purple;
+    text-decoration: none;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+        &:hover {
+            color: $Dark50;
+        }
+        &:hover, &:active, &:focus, &:visited {
+            outline: none;
+        }
+}
+.button__link_grey {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark50;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
 }

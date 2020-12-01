@@ -62,6 +62,27 @@
         font-weight: 400;
     }
 }
-.room__rate {
+.room__line {
+    width: 230px;
+    height: 1px;
+    background: opacify($Dark5, 0.05);
+    content: "";
+    margin: 0 auto;
+}
+.room__rating {
     padding: 8px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & p {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: $Dark50;
+        & span {
+            font-weight: 400;
+        }
+    }
 }

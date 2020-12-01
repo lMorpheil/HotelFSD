@@ -6,8 +6,21 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $Dark100;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 5px;
+    & span:last-child {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $Dark50;
+    }
+}
+.dropdown__wraplabel {
+    width: 266px;
 }
 .dropdown__input {
     width: 266px;
@@ -93,4 +106,12 @@
 }
 .dropdown__window_hidden {
     display: block;
+}
+[data-style] {
+    border-radius: 4px 4px 0 0;
+}
+.dropdown__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 4px 0;
 }

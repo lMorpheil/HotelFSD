@@ -1,12 +1,14 @@
 include ./mixin.pug
-section(class="uikit__wrapper")
-    span Colors & Type
-    +colorsandtype
-section(class="uikit__wrapper")
-    span Form Elements
-    +formElements
-section(class="uikit__wrapper")
-    span Cards
-    +cards
-
-include Blocks/Header&Footer/Header&Footer.pug
+div(class="uikit")
+    div(class="uikit__wrapper")
+        span Colors & Type
+        +colorsandtype
+        div(class="uikit__subwrapper")
+            span Form Elements
+            +formElements
+    div(class="uikit__wrapper")
+        span Cards
+        +cards
+    div(class="uikit__wrapper")
+        span
+        +headerandfooter()

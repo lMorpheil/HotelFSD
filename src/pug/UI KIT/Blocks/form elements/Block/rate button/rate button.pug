@@ -1,5 +1,5 @@
-mixin ratebutton()
-    div(class="ratebutton")
+mixin ratebutton(rate)
+    div(class="ratebutton" data-ratebutton=`${rate}`)
         button(class="ratebutton__button")
         button(class="ratebutton__button")
         button(class="ratebutton__button")

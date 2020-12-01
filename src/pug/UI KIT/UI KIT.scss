@@ -5,6 +5,15 @@
 body {
     background: #E5E5E5;
 }
+.uikit {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
 .uikit__wrapper {
+    padding-top: 30px;
+    margin-right: 50px;
+}
+.uikit__subwrapper {
     padding-top: 30px;
 }
