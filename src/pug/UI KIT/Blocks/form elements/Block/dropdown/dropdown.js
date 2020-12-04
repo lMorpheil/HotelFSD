@@ -10,15 +10,8 @@ for (let i = 0; i < dropdown.length; i++) {
     let dropDownWindow = element.querySelector('.dropdown__window');
     let label = element.querySelector('.dropdown__label');
     let mainInputDataBorder = element.querySelector('input[data-border]');
-    
-
-    //работа кнопок применить очистить
-    function pushButtonClear () {
-        input.value[0] = 0;
-        input.value[1] = 0;
-        input.value[2] = 0;
-    }
-    //События кнопок
+    let clear = document.querySelectorAll('.dropdown .clear');
+    let apply = document.querySelectorAll('.dropdown .apply')
     
     //Задаём значение input если значение не задано
     for (let i = 0; i < input.length; i++) {

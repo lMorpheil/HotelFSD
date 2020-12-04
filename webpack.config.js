@@ -37,9 +37,10 @@ const common = merge([
       }),
     ],
   },
+  fonts(),
   pug(),
   images(),
-  fonts(),
+  
 ]);
 
 module.exports = function (env) {

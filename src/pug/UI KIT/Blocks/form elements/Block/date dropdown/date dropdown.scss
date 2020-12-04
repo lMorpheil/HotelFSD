@@ -80,3 +80,7 @@
     line-height: 15px;
     color: $Dark25;
 }
+.datepicker--cell.-in-range- {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+}

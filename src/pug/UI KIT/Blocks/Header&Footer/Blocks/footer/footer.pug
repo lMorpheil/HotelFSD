@@ -1,4 +1,4 @@
-mixin footer()
+mixin footer(idbut)
     .footer
         .up-wrapp
             .up-wrapper
@@ -9,12 +9,15 @@ mixin footer()
                                 [{title: "о нас", link: "#"},{title: "О сервисе", link: "#"},{title: "Наша команда", link: "#"},{title: "Вакансии", link: "#"},{title: "Инвесторы", link: "#"}],
                                 [{title: "Служба поддержки", link: "#"},{title: "Соглашения", link: "#"},{title: "Сообщества", link: "#"},{title: "Связь с нами", link: "#"}])
                 .wrapper
-                    +subscription
+                    +subscription(idbut)
         .down-wrapp
             .down-wrapper
                 p Copyright © 2018 Toxin отель. Все права зачищены.
                 .media
-                    img(src="/src/images/twitter.svg", alt="logo twitter")
-                    img(src="/src/images/facebook.svg", alt="logo facebook")
-                    img(src="/src/images/IG.svg", alt="logo instagramm")
+                    a(href="#")
+                        img(src="/src/images/twitter.svg", alt="logo twitter")
+                    a(href="#")
+                        img(src="/src/images/facebook.svg", alt="logo facebook")
+                    a(href="#")
+                        img(src="/src/images/IG.svg", alt="logo instagramm")
             

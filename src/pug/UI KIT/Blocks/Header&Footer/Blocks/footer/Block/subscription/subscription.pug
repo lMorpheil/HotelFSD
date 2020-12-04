@@ -1,6 +1,6 @@
-mixin subscription
+mixin subscription(idbut)
     ul.subscription
         li.subscription__item Подписка
         li.subscription__item Получайте специальные предложения и новости сервиса
         li.subscription__item
-            +textfield("subscription","footer-sub","Email","260px")
+            +textfield("subscription",idbut,"Email","260px")

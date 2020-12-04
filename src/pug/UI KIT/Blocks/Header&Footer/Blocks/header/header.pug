@@ -1,12 +1,12 @@
 mixin header(login)
-    .header
+    div(class="header")
         +logo("color")
-        .header__wrapper
+        div(class="header__wrapper")
             +menu
             if login
-                .header__name
+                div(class="header__name")
                     p Юлий Цезарь
             else
-                .header__buttons
+                div(class="header__buttons")
                     +button("Войти","87px","","dark","")
                     +button("зарегистрироваться","196px","background","dark","")
