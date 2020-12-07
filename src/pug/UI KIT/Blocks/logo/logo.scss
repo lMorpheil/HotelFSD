@@ -1,0 +1,13 @@
+.logo { 
+    &_grey {
+        background: url( /src/images/logo-grey.svg);
+        width: 48px;
+        height: 48px;
+     }
+    &_color {
+        background: url(/src/images/Logo-color.svg) left center no-repeat,
+        url(/src/images/TOXIN.svg) right center no-repeat;
+        width: 105px;
+        height: 40px;
+    }
+}
