@@ -1,3 +1,4 @@
+include ../UI KIT/mixin.pug
 doctype html
 html(lang="en")
     head
@@ -6,4 +7,8 @@ html(lang="en")
         title TOXIN
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     body
-        include /UI KIT/UI KIT.pug
+        header
+            +header()
+        section(class="toxin-section")
+        footer
+            +footer("subscription")

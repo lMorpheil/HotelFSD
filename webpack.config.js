@@ -20,14 +20,16 @@ const PATHS = {
 
 const common = merge([
   {
-    entry: PATHS.source + "/index.js",
+    entry: {
+      index: PATHS.source + "/toxin/index.js"
+    },
     output: {
       path: PATHS.build,
       filename: "[name].js",
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: PATHS.source + "/index.pug",
+        template: PATHS.source + "/toxin/index.pug",
       }),
       new webpack.ProvidePlugin({
         $: "jquery",

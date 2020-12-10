@@ -1,20 +1,20 @@
-@import "UI KIT/Blocks/form elements/Block/text field/text field.scss";
-@import "UI KIT/Blocks/form elements/Block/checkbox/checkbox.scss";
-@import "UI KIT/Blocks/form elements/Block/radio/radio.scss";
-@import "UI KIT/Blocks/form elements/Block/toggle/toggle.scss";
-@import "UI KIT/Blocks/form elements/Block/Buttons/Buttons.scss";
-@import "UI KIT/Blocks/form elements/Block/perfect/perfect.scss";
-@import "UI KIT/Blocks/form elements/Block/date dropdown/date dropdown.scss";
-@import "UI KIT/Blocks/form elements/Block/range/range.scss";
-@import "UI KIT/Blocks/form elements/Block/dropdown/dropdown.scss";
-@import "UI KIT/Blocks/form elements/Block/bullet list/bullet list.scss";
-@import "UI KIT/Blocks/form elements/Block/like button/like button.scss";
-@import "UI KIT/Blocks/form elements/Block/rate button/rate button.scss";
-@import "UI KIT/Blocks/form elements/Block/reviews/reviews.scss";
-@import "UI KIT/Blocks/form elements/Block/checkbox list/checkbox list.scss";
-@import "UI KIT/Blocks/form elements/Block/rich checkbox buttons/rich checkbox buttons.scss";
-@import "UI KIT/Blocks/form elements/Block/pagination/pagination.scss";
-@import "UI KIT/Blocks/form elements/Block/date dropdown/date dropdown.scss";
+@import "/Block/text field/text field.scss";
+@import "/Block/checkbox/checkbox.scss";
+@import "/Block/radio/radio.scss";
+@import "/Block/toggle/toggle.scss";
+@import "/Block/Buttons/Buttons.scss";
+@import "/Block/perfect/perfect.scss";
+@import "/Block/date dropdown/date dropdown.scss";
+@import "/Block/range/range.scss";
+@import "/Block/dropdown/dropdown.scss";
+@import "/Block/bullet list/bullet list.scss";
+@import "/Block/like button/like button.scss";
+@import "/Block/rate button/rate button.scss";
+@import "/Block/reviews/reviews.scss";
+@import "/Block/checkbox list/checkbox list.scss";
+@import "/Block/rich checkbox buttons/rich checkbox buttons.scss";
+@import "/Block/pagination/pagination.scss";
+@import "/Block/date dropdown/date dropdown.scss";
 
 .formElements__wrapper {
     background: #fff;

@@ -2,7 +2,7 @@
   "name": "fsd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "dependencies": {
     "air-datepicker": "^2.2.3",
     "cleave.js": "^1.6.0",
@@ -12,6 +12,7 @@
     "webpack-jquery-ui": "^2.0.1"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^3.6.0",
     "eslint": "^7.14.0",
@@ -29,9 +30,10 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --env development",
+    "start": "webpack-dev-server --env development --open",
     "build": "webpack --env production",
-    "serv": "static build"
+    "serv": "static build",
+    "dev": "webpack --env development"
   },
   "author": "Sergei Novikov",
   "license": "ISC"
