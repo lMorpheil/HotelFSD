@@ -10,12 +10,17 @@
 .checkbox__label span {
     width: 230px;
 }
-.richcheckbox .checkbox__label {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    width: 240px;
-    color: $Dark50;
+.richcheckbox {
+    & > div {
+        margin-bottom: 10px;
+    }
+    & .checkbox__label {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        width: 240px;
+        color: $Dark50;
+    }
 }

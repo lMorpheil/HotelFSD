@@ -1,4 +1,4 @@
-mixin header(login)
+mixin header(login,reg_action, login_action)
     div(class="header")
         +logo("color")
         div(class="header__wrapper")
@@ -8,5 +8,7 @@ mixin header(login)
                     p Юлий Цезарь
             else
                 div(class="header__buttons")
-                    +button("Войти","87px","","dark","")
-                    +button("зарегистрироваться","196px","background","dark","")
+                    form(action=`${reg_action}` method="GET" id="reg")
+                        +button("Войти","87px","","dark","","reg")
+                    form(action=`${login_action}` method="GET" id="login")
+                        +button("зарегистрироваться","196px","background","dark","","login")

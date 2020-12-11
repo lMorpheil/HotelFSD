@@ -22,6 +22,7 @@ const common = merge([
   {
     entry: {
       index: PATHS.source + "/toxin/index.js"
+      //index: PATHS.source + "/UI KIT/UI KIT.js"
     },
     output: {
       path: PATHS.build,
@@ -30,6 +31,7 @@ const common = merge([
     plugins: [
       new HtmlWebpackPlugin({
         template: PATHS.source + "/toxin/index.pug",
+        //template: PATHS.source + "/UI KIT/UI KIT.pug"
       }),
       new webpack.ProvidePlugin({
         $: "jquery",
