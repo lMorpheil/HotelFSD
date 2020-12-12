@@ -6,6 +6,3 @@ import "../UI KIT/Blocks/form elements/Block/dropdown/dropdown.js";
 import "../UI KIT/Blocks/form elements/Block/like button/like button.js";
 import "../UI KIT/Blocks/form elements/Block/rate button/rate button.js";
 import "../UI KIT/Blocks/form elements/Block/checkbox list/checkbox list.js";
-array.forEach(element => {
-    
-});
