@@ -43,21 +43,37 @@ for (let i = 0; i < dropdown.length; i++) {
     //Работа с главным окном Input
     function getValue () {
         if (label.innerHTML == 'Взрослые') {
-            let summa = +input[0].value + +input[1].value + (+input[2].value);
-            switch (summa) {
+            let summa = +input[0].value + +input[1].value;
+            let baby;
+            switch (+input[2].value) {
                 case(0):
-                    mainInput.value = "Сколько гостей";
+                    baby = "";
                     break;
                 case (1):
-                    mainInput.value = `${summa} гость`;
+                    baby = `${input[2].value} младенец`;
                     break;
                 case(2):
                 case(3):
                 case(4):
-                    mainInput.value = `${summa} гостя`;
+                    baby = `${input[2].value} младенца`;
                     break;
                 default:
-                    mainInput.value = `${summa} гостей`;
+                    baby = `${input[2].value} младенцев`;
+            }
+            switch (summa) {
+                case(0):
+                    mainInput.value = "Сколько гостей " + baby;
+                    break;
+                case (1):
+                    mainInput.value = `${summa} гость,${baby}`;
+                    break;
+                case(2):
+                case(3):
+                case(4):
+                    mainInput.value = `${summa} гостя,${baby}`;
+                    break;
+                default:
+                    mainInput.value = `${summa} гостей,${baby}`;
             }
         } else {
             mainInput.value = `${input[0].value} спальни, ${input[1].value} кровати, ${input[2].value} ванны`;

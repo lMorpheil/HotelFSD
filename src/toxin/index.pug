@@ -34,7 +34,7 @@ html(lang="en")
                 div
                     +dropdown("dropDownForm", "Удобства номера", "", "2", "2", "", "true")
                 div
-                    +checkboxList("дополнительные удобства", "", 1)
+                    +checkboxList("дополнительные удобства", 1,false, [{Завтрак : false},{"Письменный стол": true},{"Стул для кормления" : true},{Кроватка : true},{Телевизор : false},{Шампунь : false}])
             div(class="search-room__room")
                 h1(class="search-room__title") Номера, которые мы для вас подобрали
                 div
