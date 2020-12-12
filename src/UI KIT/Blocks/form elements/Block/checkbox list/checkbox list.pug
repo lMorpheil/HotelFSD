@@ -1,23 +1,10 @@
-mixin checkboxList(title, hidden, id)
-    div(class="checkboxlist")
-        div(class=(hidden) ? "checkboxlist__titlewrapper checkboxlist__titlewrapper_onclick" : "checkboxlist__titlewrapper" data-hidden)
-            span(class="checkboxlist__title" data-hidden)=title
-        div(class=(hidden) ? "checkboxlist__listwrapper checkboxlist__listwrapper_onclick" : "checkboxlist__listwrapper" data-hidden )
-            ul(class="checkboxlist__list" data-hidden)
-                    li(data-hidden)
-                        +checkbox(`breakfest_${id}`,"Завтрак", "")
-                    li(data-hidden)
-                        +checkbox(`table_${id}`,"Письменный стол", "true")
-                    li(data-hidden)
-                        +checkbox(`chear_${id}`,"Стул для кормления", "true")
-                    li(data-hidden)
-                        +checkbox(`bed_${id}`,"Кроватка", "true")
-                    li(data-hidden)
-                        +checkbox(`tv_${id}`,"Телевизор", "")
-                    li(data-hidden)
-                        +checkbox(`shampoo_${id}`,"Шампунь", "")
-                    li(data-hidden)
-                        +checkbox(`tv_2_${id}`,"Телевизор", "")
-                    li(data-hidden)
-                        +checkbox(`shampoo_2_${id}`,"Шампунь", "")
-                    
+mixin checkboxList(title, id, hidden,description = [{title: bool}] )
+        div(class="checkboxlist")
+            div(class=(hidden) ? "checkboxlist__titlewrapper checkboxlist__titlewrapper_onclick" : "checkboxlist__titlewrapper" data-hidden)
+                span(class="checkboxlist__title" data-hidden)=title
+            div(class=(hidden) ? "checkboxlist__listwrapper checkboxlist__listwrapper_onclick" : "checkboxlist__listwrapper" data-hidden )
+                ul(class="checkboxlist__list" data-hidden)
+                            each val, key in description
+                                each value, title in val
+                                    li(data-hidden)
+                                        +checkbox(`breakfest_${id}_${key}`, title, value)

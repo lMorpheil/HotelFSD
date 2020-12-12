@@ -95,9 +95,9 @@ mixin formElements()
         div(class="formElements__wrap formElement__wrap_end")
             div(class="formElements__checkboxlist")
                 div(class="formElements__wraper formElements__wraper_checkboxlist")
-                    +checkboxList("expandable checkbox list", "", 1)
+                    +checkboxList("expandable checkbox list", 1,false, [{Завтрак : false},{"Письменный стол": true},{"Стул для кормления" : true},{Кроватка : true},{Телевизор : false},{Шампунь : false},{Телевизор : false},{Шампунь : false}])
                 div(class="formElements__wraper formElements__wraper_open formElements__wraper_checkboxlist")
-                    +checkboxList("expandable checkbox list", "true", 2)
+                    +checkboxList("expandable checkbox list", 2,true, [{Завтрак : false},{"Письменный стол": true},{"Стул для кормления" : true},{Кроватка : true},{Телевизор : false},{Шампунь : false},{Телевизор : false},{Шампунь : false}])
             div
                 div(class="formElements__wraper formElements__richCheckbox")
                     span(class="formElements__title") rich Checkbox Buttons
