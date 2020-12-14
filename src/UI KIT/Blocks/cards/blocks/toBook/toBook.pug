@@ -11,7 +11,7 @@ mixin toBook(number,title,price,id,sum,day)
                     span ₽ 
                     span в сутки
             div(class="toBook__wrapper")
-                +date()
+                +date(true,true)
             div(class="toBook__wrapper")
                 +dropdown(`${id}`, "гости", "", "", "", "3", "", "320px")
             div(class="toBook__total")

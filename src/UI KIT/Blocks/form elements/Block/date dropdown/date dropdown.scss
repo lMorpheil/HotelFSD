@@ -16,7 +16,14 @@
         margin-right: 0;
     }
 }
-.date__input {
+.datepicker-multi {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    border:0;
+    visibility: hidden;
+}
+.date__from, .date__to {
     width: 150px;
     height: 44px;
     background: #FFFFFF;
@@ -42,7 +49,21 @@
 .datepicker-here {
     box-shadow: 0 10px 20px $Dark5;
 }
-.datepicker {
+#datepickers-container {
+    position: absolute;
+    left: 0;
+    top: 54px;
+}
+.datepicker.-from-bottom- {
+    width: 320px;
+    height: 369px;
+    box-sizing: border-box;
+    
+}
+.datepicker--pointer {
+    display: none;
+}
+.datepicker-here .datepicker, .datepicker {
     padding: 16px 16px 16px 16px;
     width: 320px;
     height: 369px;
@@ -154,9 +175,33 @@
         line-height: 15px;
         color: $purple;
         text-transform: uppercase;
-        &:hover{
+        margin-right: 124px;
+        &:hover {
             background: none;
         }
         
+    }
+}
+.datepicker-input {
+    width: 266px;
+    height: 44px;
+    border: 1px solid $Dark25;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 0 15px 0 15px;
+    display: block;
+    margin-top: 5px;
+    background: url(/src/images/expand_more.svg) 94% center no-repeat;
+    &::placeholder {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $Dark75;
+    }
+    &:hover, &:active, &:visited, &:focus {
+        outline: none;
     }
 }

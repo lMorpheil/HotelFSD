@@ -1,6 +1,14 @@
-mixin date()
+mixin date(static, multi, label1, label2,label3)
     div(class="date")
-        label(class="date__label") прибытие
-            input(class="date__input datepicker-here" type="text" data-range="true" placeholder="ДД.ММ.ГГГГ")
-        label(class="date__label") выезд
-            input(class="date__input datepicker-here" type="text" data-range="true" placeholder="ДД.ММ.ГГГГ")
+        if static
+            if multi
+                input( type='text' class="datepicker-multi" data-range="true" data-multiple-dates-separator=" - "  data-position="bottom left" )
+                label(class="date__label")= label1
+                    input( type='text' class="date__from" placeholder="ДД.ММ.ГГГГ")
+                label(class="date__label")= label2
+                    input( type='text' class="date__to" placeholder="ДД.ММ.ГГГГ")
+            else
+                label(class="date__label")= label3
+                    <input type="text" data-range="true" data-multiple-dates-separator=" - " class="datepicker-here datepicker-input"/>
+        else
+            <div class="datepicker-here"></div>

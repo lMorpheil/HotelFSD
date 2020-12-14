@@ -2,7 +2,7 @@ mixin searchroom(id)
     div(class="searchroom")
         form(action="" method="post")
             h1(class="searchroom__title") Найдём номера под ваши пожелания
-            +date()
+            +date(true,true)
             div(class="searchroom__wrapper")
                 +dropdown(`${id}`, "гости", "", "", "", "", "", "320px")
             +button("подобрать номер","320px","background","dark","arrow")
