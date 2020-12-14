@@ -8,5 +8,11 @@
     }
 }
 .ratebutton__button_active {
+    width: 24px;
+    height: 24px;
+    border: none;
     background: #fff url(/src/images/star.svg) center center no-repeat;
+    &:hover, &:active, &:focus, &:visited {
+        outline: none;
+    }
 }

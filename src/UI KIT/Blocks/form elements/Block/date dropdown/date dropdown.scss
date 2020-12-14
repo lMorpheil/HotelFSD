@@ -1,3 +1,4 @@
+
 .date {
     display: flex;
     justify-content: space-between;
@@ -22,17 +23,34 @@
     border: 1px solid $Dark25;
     box-sizing: border-box;
     border-radius: 4px;
+    display: block;
+    margin-top: 5px;
+    padding: 0 15px 0 15px;
+    &::placeholder {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $Dark75;
+        background: url(/src/images/expand_more.svg) right center no-repeat;
+    }
+    &:hover, &:active, &:visited, &:focus {
+        outline: none;
+    }
+}
+.datepicker-here {
+    box-shadow: 0 10px 20px $Dark5;
 }
 .datepicker {
+    padding: 16px 16px 16px 16px;
     width: 320px;
     height: 369px;
     background: #FFFFFF;
-    border: 1px solid rgba(31, 32, 65, 0.25);
+    border: 1px solid $Dark25;
     box-sizing: border-box;
-    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
-}
-.datepicker--nav-title {
+    & .datepicker--nav-title {
     width: 114px;
     height: 47px;
     font-family: $fMont;
@@ -41,46 +59,104 @@
     font-size: 19px;
     line-height: 23px;
     color: $Dark100;
-    & i {
+        & i {
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+            line-height: 23px;
+            color: $Dark100;
+        }
+    }
+    & .datepicker--day-name {
         font-family: $fMont;
         font-style: normal;
         font-weight: bold;
-        font-size: 19px;
-        line-height: 23px;
-        color: $Dark100;
+        font-size: 12px;
+        line-height: 15px;
+        color: $purple;
     }
-}
-.datepicker--day-name {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    color: $purple;
-}
-.datepicker--cell {
+    & .datepicker--cell {
     height: 40px;
-    width: 40px;
+    width: 38px;
     font-family: $fMont;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 15px;
     color: $Dark50;
-    &.-range-from-, &.-selected-.-focus-, &.-range-to- {
+        &.-range-from-, &.-selected-.-focus-, &.-range-to-, &.-focus- {
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+        }
+        &.-range-from-::after {
+            content: '';
+            width: 20px;
+            height: 40px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            opacity: 0.25;
+            position: absolute;
+            right: 0;
+        }
+        &.-range-to-::before {
+            content: '';
+            width: 20px;
+            height: 40px;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            opacity: 0.25;
+            position: absolute;
+            left: 0;
+        }
+    }
+    & .datepicker--cell-day.-other-month- {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: $Dark25;
+    }
+    & .datepicker--cell.-in-range- {
         background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        opacity: 0.25;
+    }
+    & .datepicker--cell.-current- {
+        color: #fff;
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
         border-radius: 22px;
     }
-}
-.datepicker--cell-day.-other-month- {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: $Dark25;
-}
-.datepicker--cell.-in-range- {
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    opacity: 0.25;
+    & .datepicker--nav {
+        border: none;
+    }
+    & .datepicker--nav-action {
+        & path {
+            stroke: none;
+            fill: $purple;
+        }
+        & svg {
+            width: 17px;
+        }
+    }
+    & .datepicker--nav-title > div {
+        text-align: center;
+    }
+    & .datepicker--nav-title:hover, & .datepicker--nav-action:hover {
+        background: none;
+    }
+    & .datepicker--buttons {
+        border: none;
+    }
+    & .datepicker--button {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: $purple;
+        text-transform: uppercase;
+        &:hover{
+            background: none;
+        }
+        
+    }
 }
