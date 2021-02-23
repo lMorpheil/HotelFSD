@@ -1,0 +1,62 @@
+@import "../Blocks/fonts/fonts.scss";
+@import "../Blocks/colors/colors.scss";
+@import "../Blocks/Header&Footer/Header&Footer.scss";
+@import "../Blocks/form elements/form elements.scss";
+@import "../Blocks/cards/cards.scss";
+
+.picture {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.picture__main-picture {
+    background: url(../assets/images/room-details-main.jpg) center center no-repeat;
+    background-size: cover;
+    width: 981px;
+    height: 485px;
+}
+.picture__up {
+    background: url(../assets/images/room-details-right-up.jpg) center center no-repeat;
+    background-size: cover;
+    width: 461px;
+    height: 226px;
+}
+.picture__down {
+    background: url(../assets/images/room-details-right-down.jpg) center center no-repeat;
+    background-size: cover;
+    width: 461px;
+    height: 259px;
+}
+.description {
+    padding: 70px 140px 70px 139px;
+    display: flex;
+    justify-content: space-between;
+}
+.description__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.description__wrap {
+    padding-top: 20px;
+    &:last-child {
+        padding-bottom: 10px;
+    }
+}
+.description__coment {
+    width: 639px;
+}
+.description__coment-title {
+    display: flex;
+    justify-content: space-between;
+}
+.description__warning {
+    display: flex;
+    justify-content: space-between;
+}
+.description__warning {
+    padding-top: 30px;
+}
+.description__cancel {
+    width: 341px;
+}

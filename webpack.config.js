@@ -10,6 +10,7 @@ const extractCSS = require("./webpack/css.extract");
 const uglifyJS = require("./webpack/js.uglify");
 const images = require("./webpack/images");
 const fonts = require("./webpack/fonts");
+const fs = require('fs');
 
 
 
@@ -17,22 +18,33 @@ const PATHS = {
   source: path.join(__dirname, "src"),
   build: path.join(__dirname, "build"),
 };
+const PAGES_DIR = `${PATHS.source}/pages/`;
+const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith('.pug'));
 
 const common = merge([
   {
     entry: {
-      //index: PATHS.source + "/toxin/index.js"
-      index: PATHS.source + "/UI KIT/UI KIT.js"
+      //index: './src/js/registration.js',
+      //login: '.src/js/login.js',
+      //'search-room': './src/js/search-room.js',
+      'room-details': './src/js/room-details.js',
+      //"UI KIT": './src/UI KIT/UI KIT.js'
+    
     },
     output: {
-      path: PATHS.build,
-      filename: "[name].js",
+      filename: '[name].js',
+      path: __dirname + '/dist'
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        //template: PATHS.source + "/toxin/index.pug",
-        template: PATHS.source + "/UI KIT/UI KIT.pug"
-      }),
+      //...PAGES.map(
+       // (page) =>
+          new HtmlWebpackPlugin({
+            //template: `${PAGES_DIR}/${page}`,
+            //filename: `./${page.replace(/\.pug/, '.html')}`,
+           // minify: false,
+           template: './src/pages/room-details.pug'
+          }),
+      //),
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery",

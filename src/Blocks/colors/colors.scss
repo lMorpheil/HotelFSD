@@ -1,0 +1,299 @@
+@import "../logo/logo.scss";
+@import "../fonts/fonts.scss";
+
+$Dark100: #1F2041;
+$Dark75: rgba(31, 32, 65, 0.75);
+$Dark50: rgba(31, 32, 65, 0.5);
+$Dark25: rgba(31, 32, 65, 0.25);
+$Dark5: rgba(31, 32, 65, 0.05);
+$purple: #BC9CFF;
+$green: #6FCF97;
+
+.colors__wrapper {
+    background: #fff;
+    padding: 30px 191px 145px 30px;
+    width: 1440px;
+}
+.colors__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 67px 0 0 150px;
+}
+
+.colors__color li {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    color: $Dark100;
+    &:nth-child(1) {
+        background: $Dark100;
+        &::after {
+            content: "Dark Shade 100%";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#1F2041";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(2) {
+        background: $Dark75;
+        &::after {
+            content: "Dark Shade 75%";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#1F2041";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(3) {
+        background: $Dark50;
+        &::after {
+            content: "Dark Shade 50%";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#1F2041";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(4) {
+        background: $Dark25;
+        &::after {
+            content: "Dark Shade 25%";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#1F2041";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(5) {
+        background: $Dark5;
+        &::after {
+            content: "Dark Shade 5%";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#1F2041";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(6) {
+        background: $purple;
+        &::after {
+            content: "Purple";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#BC9CFF";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+    &:nth-child(7) {
+        background: $green;
+        &::after {
+            content: "Green";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 8px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 19px;
+        }
+        &::before {
+            content: "#6FCF97";
+            width: 160px;
+            position: absolute;
+            left: 110px;
+            top: 38px;
+            font-family: $fQuick;
+            font-style: normal;
+            font-size: 19px;
+        }
+    }
+}
+.colors__titles li {
+    margin-bottom: 50px;
+    position: relative;
+    list-style-type: none;
+    color: $Dark100;
+    &:nth-child(1) {
+        font-family: $fQuick;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 345px;
+        &::before {
+            content: "H1";
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            color: $Dark25;
+            position: absolute;
+            left: -70px;
+        }
+    }
+    &:nth-child(2) {
+        font-family: $fQuick;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 24px;
+        max-width: 282px;
+        &::before {
+            content: "H2";
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 23px;
+            color: $Dark25;
+            position: absolute;
+            left: -70px;
+        }
+    }
+    &:nth-child(3) {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 186px;
+        text-transform: uppercase;
+        &::before {
+            content: "H3";
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: $Dark25;
+            text-transform: uppercase;
+            position: absolute;
+            left: -70px;
+        }
+    }
+    &:nth-child(4) {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 301px;
+        color: $Dark75;
+        &::before {
+            content: "Body";
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 24px;
+            color: $Dark25;
+            position: absolute;
+            left: -70px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        padding: 67px 30px 0 30px;
+    }
+}
+@media screen and (max-width: 760px) {
+    .wrapper {
+        display: block;
+        margin: 0 auto;
+        width: 360px;
+        padding: 67px 0 0 0;
+    }
+}
+

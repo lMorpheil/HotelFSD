@@ -1,0 +1,18 @@
+mixin room(number, title,price,rate,review)
+    div(class="room")
+        div(class="room__slider")
+            img(src="/src/assets/images/room-image.jpg", alt="номер")    
+        div(class="room__wrapper")
+            h1(class="room__title") 
+                span №
+                = number
+                span= title
+            p(class="room__description")
+                span= `${price}`
+                span ₽ 
+                span в сутки
+        div(class="room__line")
+        div(class="room__rating")
+            +ratebutton(rate)
+            p= review
+                span  Отзывов

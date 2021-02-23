@@ -1,0 +1,6 @@
+mixin perfect(icon, title_1, title_2, underline)
+    div(class= (underline) ? "perfect perfect_underline" : "perfect")
+        img(src=`${icon}`, alt="Иконка", class="perfect__image")
+        div(class="perfect__wrap")
+            p(class="perfect__title-first")=title_1
+            p(class="perfect__title-second")=title_2

@@ -1,0 +1,28 @@
+.menu__list {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 447px;
+    list-style: none;
+}
+.menu__link {
+    color: $Dark50;
+    text-decoration: none;
+        & span {
+            background: url(/src/assets/images/expand_more.svg) center center no-repeat;
+            height: 24px;
+            width: 21px;
+            display: inline-block;
+            line-height: 21px;
+            vertical-align: middle
+        }
+    &:hover, &:focus {
+        color: $Dark75;
+        font-weight: bold;
+    }
+}

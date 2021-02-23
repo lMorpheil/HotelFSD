@@ -1,0 +1,84 @@
+@import "../Blocks/colors/colors.scss";
+@import "../Blocks/fonts/fonts.scss";
+@import "../../node_modules/air-datepicker/dist/css/datepicker.css";
+@import "../Blocks/form elements/Block/range/range.scss";
+@import "../Blocks/Header&Footer/Header&Footer.scss";
+@import "../Blocks/form elements/form elements.scss";
+@import "../Blocks/cards/cards.scss";
+
+.search-room {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin: 0 auto;
+}
+.search-room__header {
+    box-shadow: 0px 10px 20px $Dark5;
+}
+.search-room__room > div {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    & > div {
+        margin-right: 12px;
+    }
+}
+.search-room__title {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $Dark100;
+    margin-bottom: 21px;
+}
+.search-room__filter > div {
+    padding-bottom: 20px;
+}
+.search-room__range {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: $Dark50;
+    margin-top: 10px;
+}
+.search-room__description > div {
+    margin-bottom: 16px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    & > span {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $Dark100;
+    }
+}
+.search-room__checkbox {
+    & > div {
+        margin-bottom: 10px;
+        & > span {
+            font-family: $fMont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $Dark100;
+            margin-bottom: 16px;
+        }
+        &:first-child {
+            margin-bottom: 16px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+    
