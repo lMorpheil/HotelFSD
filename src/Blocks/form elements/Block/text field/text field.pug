@@ -1,12 +1,10 @@
 mixin textfield(type, id, place, width, title, subtitle, mask, form)
     div.text-field
-        if(title == undefined || subtitle == undefined)
-        else
-            label(class="text-field__label"
-                style=`width: ${width}`
-                for=`${id}`)
+        if(title != undefined)
+            label(class="text-field__label" style=`width: ${width}` for=`${id}`)
                 span.text-field__title=title
-                span.text-field__subtitle=subtitle
+                if(subtitle != undefined)
+                    span.text-field__subtitle=subtitle
         input(
             id=`${id}`
             form=`${form}`

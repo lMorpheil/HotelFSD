@@ -6,3 +6,4 @@ import "../Blocks/form elements/Block/dropdown/dropdown.js";
 import "../Blocks/form elements/Block/like button/like button.js";
 import "../Blocks/form elements/Block/checkbox list/checkbox list.js";
 import "../Blocks/form elements/Block/pagination/pagination.js";
+import "../Blocks/cards/blocks/room/room.js";

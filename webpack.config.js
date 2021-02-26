@@ -25,24 +25,23 @@ const common = merge([
   {
     entry: {
       //index: './src/js/registration.js',
-      //login: '.src/js/login.js',
+      //login: './src/js/login.js',
       //'search-room': './src/js/search-room.js',
-      'room-details': './src/js/room-details.js',
-      //"UI KIT": './src/UI KIT/UI KIT.js'
-    
+      //'room-details': './src/js/room-details.js',
+      "UI KIT": './src/UI KIT/UI KIT.js'
     },
     output: {
       filename: '[name].js',
       path: __dirname + '/dist'
     },
     plugins: [
-      //...PAGES.map(
-       // (page) =>
+      // ...PAGES.map(
+      //   (page) =>
           new HtmlWebpackPlugin({
-            //template: `${PAGES_DIR}/${page}`,
-            //filename: `./${page.replace(/\.pug/, '.html')}`,
-           // minify: false,
-           template: './src/pages/room-details.pug'
+            // template: `${PAGES_DIR}/${page}`,
+            // filename: `./${page.replace(/\.pug/, '.html')}`,
+            // minify: false,
+           template: './src/UI KIT/UI KIT.pug'
           }),
       //),
       new webpack.ProvidePlugin({

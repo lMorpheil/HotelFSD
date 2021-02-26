@@ -9,7 +9,7 @@ mixin header(login,reg_action, login_action)
                         p Юлий Цезарь
                 else
                     div(class="header__buttons")
-                        form(action=`${reg_action}` method="GET" id="reg")
-                            +button("Войти","87px","","dark","","reg")
-                        form(action=`${login_action}` method="GET" id="login")
-                            +button("зарегистрироваться","196px","background","dark","","login")
+                        form(action=`${reg_action}` method="GET" id="login")
+                            +button("Войти","87px","","dark","","login", "header-login" )
+                        form(action=`${login_action}` method="GET" id="reg")
+                            +button("зарегистрироваться","196px","background","dark","","reg", "header-reg")

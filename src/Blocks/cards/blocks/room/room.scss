@@ -8,6 +8,25 @@
 .room__slider {
     overflow: hidden;
     height: 152px;
+    position: relative;
+}
+.room__image {
+    position: absolute;
+    transition: all ease 1s;
+}
+.room__indicator {
+    display: flex;
+    justify-content: space-between;
+    position: absolute ;
+    left: 220px;
+    top: 130px;
+    z-index: 3;
+}
+.room__item {
+    width: 7.5px;
+    height: 7.5px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
 }
 .room__wrapper {
     padding: 20px 17px 10px 20px;

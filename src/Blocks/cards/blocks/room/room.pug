@@ -1,7 +1,13 @@
-mixin room(number, title,price,rate,review)
+mixin room(images, number, title,price,rate,review)
     div(class="room")
         div(class="room__slider")
-            img(src="/src/assets/images/room-image.jpg", alt="номер")    
+            each val,key in images
+                img(class="room__image" src=`${val}`, alt=`фото ${key}`)
+            .room__indicator
+                .room__item
+                .room__item  
+                .room__item  
+                .room__item  
         div(class="room__wrapper")
             h1(class="room__title") 
                 span №
