@@ -22,6 +22,13 @@
     margin-left: 20px;
     width: 303px;
 }
+.header__form {
+    width: 87px;
+    height: 34px;
+    &:last-child {
+        width: 197px;
+    }
+}
 .header__name {
     padding-left: 20px;
     margin-left: 20px;
@@ -30,12 +37,12 @@
     vertical-align: middle;
     align-items: center;
     display: flex;
-        & p {
-            font-family: $fMont;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 17px;
-            color: $Dark50;
-        }
+    & p {
+        font-family: $fMont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $Dark50;
+    }
 }

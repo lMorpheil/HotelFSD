@@ -4,7 +4,7 @@ mixin room(images, number, title,price,rate,review)
             each val,key in images
                 img(class="room__image" src=`${val}`, alt=`фото ${key}`)
             .room__indicator
-                .room__item
+                .room__item.room__item_active
                 .room__item  
                 .room__item  
                 .room__item  
