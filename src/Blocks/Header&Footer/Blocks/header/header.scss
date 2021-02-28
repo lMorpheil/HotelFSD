@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1140px;
+    max-width: 1160px;
     margin: 0 auto;
     padding: 15px 0 15px 0;
     background-color: #fff;
@@ -29,7 +29,7 @@
         width: 197px;
     }
 }
-.header__name {
+.header__wrapper-name {
     padding-left: 20px;
     margin-left: 20px;
     height: 30px;
@@ -37,12 +37,11 @@
     vertical-align: middle;
     align-items: center;
     display: flex;
-    & p {
+    & .header__name {
         font-family: $fMont;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
-        line-height: 17px;
         color: $Dark50;
     }
 }

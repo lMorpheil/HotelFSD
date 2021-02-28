@@ -8,5 +8,8 @@ html(lang="en")
     body
         +header('', './registration.html', "./login.html")
         section(class="toxin-section")
-        footer
-            +footer("subscription")
+            .toxin-section__wrapper
+                +searchroom("searchroom")
+                .toxin-section__postscript
+                    p.toxin-section__title Лучшие номера для вашей работы, отдыха и просто вдохновения
+        +footer("subscription")

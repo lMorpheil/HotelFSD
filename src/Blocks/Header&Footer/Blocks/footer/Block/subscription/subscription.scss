@@ -1,8 +1,9 @@
 .subscription {
     list-style: none;
+    padding-top: 4px;
 }
 .subscription__item:nth-child(1) {
-    margin-bottom: 21px;
+    margin-bottom: 18px;
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -12,7 +13,7 @@
     color: $Dark100;
 }
 .subscription__item:nth-child(2) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
     width: 260px;
     font-family: Montserrat;
     font-style: normal;

@@ -10,7 +10,7 @@
 }
 .searchroom__title {
     width: 300px;
-    font-family: $fQuick;
+    font-family: $fMont;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -18,6 +18,10 @@
     color:$Dark100;
     padding-bottom: 21px;
 }
-.searchroom__wrapper {
+.searchroom__dropdown {
     padding: 20px 0 31px 0;
+}
+.searchroom__button {
+    width: 320px;
+    height: 44px;
 }
