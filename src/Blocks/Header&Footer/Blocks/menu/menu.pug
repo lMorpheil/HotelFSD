@@ -1,15 +1,29 @@
-mixin menu
+mixin menu(login,reg_action, login_action)
     nav.menu
-        ul.menu__list
-            li.menu__item
-                a(href="#" class="menu__link") О нас
-            li
-                a(href="#" class="menu__link") Услуги
-                    span
-            li
-                a(href="#" class="menu__link") Вакансии
-            li
-                a(href="#" class="menu__link") Новости
-            li
-                a(href="#" class="menu__link") Соглашения
-                    span
+        .menu__burger
+            span.menu__line
+            span.menu__line
+            span.menu__line
+        .menu__wrapper   
+            ul.menu__list
+                li.menu__item
+                    a(href="#" class="menu__link") О нас
+                li.menu__item
+                    a(href="#" class="menu__link") Услуги
+                        span.menu__arrow
+                li.menu__item
+                    a(href="#" class="menu__link") Вакансии
+                li.menu__item
+                    a(href="#" class="menu__link") Новости
+                li.menu__item
+                    a(href="#" class="menu__link") Соглашения
+                        span.menu__arrow
+            if login
+                div(class="menu__wrapper-name")
+                    p.menu__name Юлий Цезарь
+            else
+                div(class="menu__buttons")
+                    form(class="menu__form" action=`${reg_action}` method="GET" id="login")
+                        +button("Войти","","dark","","login", "header-login" )
+                    form(class="menu__form" action=`${login_action}` method="GET" id="reg")
+                        +button("зарегистрироваться","background","dark","","reg", "header-reg")

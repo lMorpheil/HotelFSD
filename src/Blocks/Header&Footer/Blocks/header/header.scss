@@ -9,39 +9,7 @@
     margin: 0 auto;
     padding: 15px 0 15px 0;
     background-color: #fff;
-}
-.header__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
-    width: 303px;
-}
-.header__form {
-    width: 87px;
-    height: 34px;
-    &:last-child {
-        width: 197px;
-    }
-}
-.header__wrapper-name {
-    padding-left: 20px;
-    margin-left: 20px;
-    height: 30px;
-    border-left: 1px solid transparentize($Dark50, 0.4);
-    vertical-align: middle;
-    align-items: center;
-    display: flex;
-    & .header__name {
-        font-family: $fMont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        color: $Dark50;
+    @media (max-width: 1224px) {
+        padding: 15px 10px 15px 10px;
     }
 }

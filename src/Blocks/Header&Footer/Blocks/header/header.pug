@@ -3,13 +3,4 @@ mixin header(login,reg_action, login_action)
         div(class="header__wrap")
             +logo("color")
             div(class="header__wrapper")
-                +menu
-                if login
-                    div(class="header__wrapper-name")
-                        p.header__name Юлий Цезарь
-                else
-                    div(class="header__buttons")
-                        form(class="header__form" action=`${reg_action}` method="GET" id="login")
-                                +button("Войти","","dark","","login", "header-login" )
-                        form(class="header__form" action=`${login_action}` method="GET" id="reg")
-                                +button("зарегистрироваться","background","dark","","reg", "header-reg")
+                +menu(login,reg_action, login_action)

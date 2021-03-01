@@ -11,15 +11,24 @@
     margin: 0 auto;
     //прижать  футер адаптив!!!!
 }
-.toxin-section__wrapper {
-    width: 1440px;
+.toxin-section__search {
+    max-width: 1440px;
     margin: 0 auto;
     padding: 70px 120px 20px 140px;
+    @media (max-width: 905px) {
+        padding: 70px 0 20px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 .toxin-section__postscript {
     padding-top: 318px;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 905px) {
+        justify-content: center;
+    }
 }
 .toxin-section__title {
     font-family: $fMont;
