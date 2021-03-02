@@ -1,7 +1,8 @@
 mixin richCheckbox(id, text, id2, text2)
-    div(class="richcheckbox")
-        +checkbox(id, text)
-        div
+    .richcheckbox
+        .richcheckbox__wrapper
+            +checkbox(id, text)
+        .richcheckbox__wrapper
             +checkbox(id2, text2)
 
         

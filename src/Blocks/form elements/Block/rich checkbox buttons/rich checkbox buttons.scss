@@ -11,9 +11,6 @@
     width: 230px;
 }
 .richcheckbox {
-    & > div {
-        margin-bottom: 10px;
-    }
     & .checkbox__label {
         font-family: $fMont;
         font-style: normal;
@@ -23,4 +20,7 @@
         width: 240px;
         color: $Dark50;
     }
+}
+.richcheckbox__wrapper {
+    margin-bottom: 15px;
 }

@@ -25,10 +25,10 @@ const common = merge([
   {
     entry: {
       //index: './src/index.js'
-      registration: './src/js/registration.js',
+      //registration: './src/js/registration.js',
       //login: './src/js/login.js',
       //'search-room': './src/js/search-room.js',
-      //'room-details': './src/js/room-details.js',
+      'room-details': './src/js/room-details.js',
       //"UI KIT": './src/UI KIT/UI KIT.js'
     },
     output: {
@@ -42,7 +42,7 @@ const common = merge([
             // template: `${PAGES_DIR}/${page}`,
             // filename: `./${page.replace(/\.pug/, '.html')}`,
             // minify: false,
-           template: './src/pages/registration.pug'
+           template: './src/pages/room-details.pug'
           }),
       //),
       new webpack.ProvidePlugin({

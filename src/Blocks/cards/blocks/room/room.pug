@@ -20,5 +20,5 @@ mixin room(images, number, title,price,rate,review)
         div(class="room__line")
         div(class="room__rating")
             +ratebutton(rate)
-            p= review
+            p.room__review= review
                 span  Отзывов

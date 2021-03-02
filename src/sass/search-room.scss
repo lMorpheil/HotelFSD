@@ -10,19 +10,39 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
-    width: 1140px;
+    max-width: 1160px;
     margin: 0 auto;
-}
-.search-room__header {
-    box-shadow: 0px 10px 20px $Dark5;
+    @media (max-width: 1170px) {
+        flex-direction: column;
+        padding: 30px 10px 0 10px;
+    }
 }
 .search-room__room > div {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 20px;
     & > div {
         margin-right: 12px;
     }
+}
+.search-room__filter {
+    @media (max-width: 1170px) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+    }
+}
+.search-room__input-wrap {
+    max-width: 266px;
+    padding-bottom: 20px;
+    &:nth-child(2) {
+        padding-bottom: 30px;
+    }
+}
+.search-room__range {
+    padding-bottom: 30px;
 }
 .search-room__title {
     font-family: $fMont;
@@ -33,9 +53,6 @@
     color: $Dark100;
     margin-bottom: 21px;
 }
-.search-room__filter > div {
-    padding-bottom: 20px;
-}
 .search-room__range {
     font-family: $fMont;
     font-style: normal;
@@ -45,12 +62,10 @@
     color: $Dark50;
     margin-top: 10px;
 }
-.search-room__description > div {
-    margin-bottom: 16px;
-    &:last-child {
-        margin-bottom: 0;
-    }
-    & > span {
+.search-room__description {
+    padding-bottom: 7px;
+}
+.search-room__rules {
     font-family: $fMont;
     font-style: normal;
     font-weight: bold;
@@ -58,27 +73,23 @@
     line-height: 15px;
     text-transform: uppercase;
     color: $Dark100;
-    }
+    margin-bottom: 16px;
 }
 .search-room__checkbox {
-    & > div {
-        margin-bottom: 10px;
-        & > span {
-            font-family: $fMont;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 15px;
-            text-transform: uppercase;
-            color: $Dark100;
-            margin-bottom: 16px;
-        }
-        &:first-child {
-            margin-bottom: 16px;
-        }
-        &:last-child {
-            margin-bottom: 0;
-        }
+    margin-bottom: 8px;
+    &:first-child {
+        margin-bottom: 15px;
+    }
+    &:last-child {
+        margin-bottom: 30px;
     }
 }
-    
+.search-room__checkboxlist {
+    padding-top: 30px;
+}
+.search-room__pagination {
+    padding: 22px 0 73px 0;
+    display: flex;
+    justify-content: center;
+}
+  

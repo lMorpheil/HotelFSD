@@ -1,12 +1,14 @@
 mixin login(id)
     div(class="login")
-        form(action="" method="post" form=id)
+        form.login__form(action="" method="post" form=id)
             h1(class="login__title") Войти
             div(class="login__email")
                 +textfield("email", "email","Email","320px","","","",id)
             div(class="login__password")
                 +textfield("password","password","Пароль","320px","","","",id)
-            +button("Войти","background","dark","arrow",id)
+            .login__sign-in
+                +button("Войти","background","dark","arrow",id)
             div(class="login__creating")
-                p Нет аккаунта на Toxin?
-                +button("Создать","","dark","",id)
+                p.login__question Нет аккаунта на Toxin?
+                .login__create
+                    +button("Создать","","dark","",id)

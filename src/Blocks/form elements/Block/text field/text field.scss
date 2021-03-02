@@ -2,6 +2,7 @@
     & label {
         display: flex;
         justify-content: space-between;
+        width: 100%;
         & span {
             font-family: $fMont;
             font-style: normal;
@@ -30,6 +31,7 @@
         font-size: 14px;
         line-height: 18px;
         color: $Dark25;
+        width: 100%;
         &::placeholder {
             color: $Dark25;
             line-height: 24px;
