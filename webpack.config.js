@@ -24,8 +24,8 @@ const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith('
 const common = merge([
   {
     entry: {
-      index: './src/index.js'
-      //registration: './src/js/registration.js',
+      //index: './src/index.js'
+      registration: './src/js/registration.js',
       //login: './src/js/login.js',
       //'search-room': './src/js/search-room.js',
       //'room-details': './src/js/room-details.js',
@@ -42,7 +42,7 @@ const common = merge([
             // template: `${PAGES_DIR}/${page}`,
             // filename: `./${page.replace(/\.pug/, '.html')}`,
             // minify: false,
-           template: './src/pages/index.pug'
+           template: './src/pages/registration.pug'
           }),
       //),
       new webpack.ProvidePlugin({

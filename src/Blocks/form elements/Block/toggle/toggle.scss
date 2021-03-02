@@ -19,6 +19,7 @@
             margin-right: 10px;
             flex-grow: 0;
             flex-shrink: 0;
+            box-sizing: border-box;
             background: url(/src/assets/images/Rectangle-toggle-off.svg) 4px center no-repeat;
         }
 }
