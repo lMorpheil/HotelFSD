@@ -1,5 +1,5 @@
 .toBook {
-    width: 380px;
+    max-width: 380px;
     height: 511px;
     background: #FFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -7,6 +7,9 @@
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px 21px 30px 30px;
+    @media (max-width: 400px) {
+        padding: 10px 0 10px 0;
+    }
 }
 .toBook__title {
     font-family: $fMont;
@@ -70,31 +73,31 @@
     color: $Dark75;
     list-style: none;
     margin-bottom: 10px;
-    & li {
+}
+.toBook__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    & div {
         display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        & div {
-            display: flex;
-            justify-self: start;
-        }
-        & div div:nth-child(2) {
-            width: 20px;
-            height: 20px;
-            border: 1px solid $Dark25;
-            box-sizing: border-box;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 12px;
-            line-height: 14px;
-            color: $Dark25;
-            margin-left: 5px;
-        }
-        &:nth-child(3) span:nth-child(1) {
-            max-width: 214px;
-        }
+        justify-self: start;
+    }
+    & div div:nth-child(2) {
+        width: 20px;
+        height: 20px;
+        border: 1px solid $Dark25;
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        line-height: 14px;
+        color: $Dark25;
+        margin-left: 5px;
+    }
+    &:nth-child(3) span:nth-child(1) {
+        max-width: 214px;
     }
 }
 .toBook__total {
@@ -115,4 +118,8 @@
         border: 1px dashed $Dark25;
         box-sizing: border-box;
     }
+}
+.toBook__button {
+    width: 320px;
+    height: 44px;
 }

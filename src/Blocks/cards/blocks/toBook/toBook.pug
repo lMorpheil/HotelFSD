@@ -1,37 +1,38 @@
 mixin toBook(number,title,price,id,sum,day)
-    div(class="toBook")
-        form(action="" method="post")
-            div(class="toBook__wrapper")
-                h1(class="toBook__title") 
+    .toBook
+        form.toBook__form(action="" method="post")
+            .toBook__wrapper
+                h1.toBook__title
                     span №
                     = number
                     span= title
-                p(class="toBook__description")
+                p.toBook__description
                     span= `${price}`
                     span ₽ 
                     span в сутки
-            div(class="toBook__wrapper")
+            .toBook__wrapper
                 +date(true,true)
-            div(class="toBook__wrapper")
+            .toBook__wrapper
                 +dropdown(`${id}`, "гости", "", "", "", "3", "", "320px")
-            ul(class="toBook__services")
-                li
+            ul.toBook__services
+                li.toBook__item
                     span= `${price}₽ х ${day} суток`
                     span 39 960₽
-                li
+                li.toBook__item
                     div
                         span Сбор за услуги: скидка 2 179₽
                         div
                             span i
                     span 0₽
-                li
+                li.toBook__item
                     div
                         span Сбор за дополнительные услуги
                         div
                             span i
                     span 300₽
-            div(class="toBook__total")
+            .toBook__total
                 p Итого
                 div
                 p= sum
-            +button("забронировать","background","dark","arrow")
+            .toBook__button   
+                +button("забронировать","background","dark","arrow")

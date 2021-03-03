@@ -17,7 +17,7 @@ html(lang="en")
             .description__specification
                 .description__wrapper
                     .description__about
-                        h2 Сведения о номере 
+                        h2.description__title Сведения о номере 
                         .description__wrap
                             +perfect("/src/assets/images/insert_emoticon.svg", "Комфорт", "Шумопоглощающие стены", true)
                         .description__wrap
@@ -25,24 +25,24 @@ html(lang="en")
                         .description__wrap
                             +perfect("/src/assets/images/comfort.svg", "Уют", "Номер оснащён камином")
                     .description__graph 
-                        h2 Впечатления от номера
+                        h2.description__title Впечатления от номера
                 .description__coment
                     .description__coment-title
-                        h2 Отзывы посетителей номера
-                        p 2 отзыва
+                        h2.description__title Отзывы посетителей номера
+                        p.description__review 2 отзыва
                     .description__wrap
                         +reviews("/src/assets/images/image.jpg", "Мурад Сарафанов", "5 дней назад", 12, true, "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
                     .description__wrap
                         +reviews("/src/assets/images/face.jpg", "Патрисия Стёклышкова", "Неделю назад", 2, false, "Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент")
                 .description__warning
                     .description__rule 
-                        h2 Правила
-                        +bullet
+                        h2.description__title Правила
+                        .description__bullet
+                            +bullet
                     .description__cancel
-                        h2 Отмена
-                        p Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                        h2.description__title Отмена
+                        p.description__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 
             .description__card
                 +toBook(" 888", "люкс", "9 990", "toBookUIKIT","38 081₽","4")
-        footer
-            +footer("subscription")
+        +footer("subscription")
