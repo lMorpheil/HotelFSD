@@ -5,4 +5,4 @@ import "../Blocks/form elements/Block/date dropdown/date dropdown.js";
 import "../Blocks/form elements/Block/dropdown/dropdown.js";
 import "../Blocks/form elements/Block/like button/like button.js";
 import "../Blocks/form elements/Block/checkbox list/checkbox list.js";
-import '../Blocks/Header&Footer/Blocks/menu/menu.js';
+import '../Blocks/Header&Footer/Blocks/menu/menu';

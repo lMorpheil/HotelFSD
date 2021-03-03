@@ -49,7 +49,7 @@ const common = merge([
         $: "jquery",
         jQuery: "jquery",
         "window.jQuery": "jquery'",
-        "window.$": "jquery"
+        "window.$": "jquery",
       }),
     ],
   },
