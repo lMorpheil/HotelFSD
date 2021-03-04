@@ -3,9 +3,9 @@
 <h2>Запуск проекта через Webpack</h2>
  1. Запуск dev сервера - npm run start
 
- 2. Запуск dev сборки - npm run dev
+2. Запуск dev сборки - npm run dev
  
- 3. Запуск production сборки - npm run build
+3. Запуск production сборки - npm run build
  <h2>При создании использовался стек технологий:</h2>
   Webpack, препроцессор CSS - SaSS, препроцессор HTML - PUG, JQuery, ***javaScript***
  <h3>Так же использовались библиотеки JQuery UI:</h3>
