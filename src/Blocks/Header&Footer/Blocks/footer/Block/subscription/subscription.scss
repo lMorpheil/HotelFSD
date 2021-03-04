@@ -1,24 +1,24 @@
 .subscription {
-    list-style: none;
-    padding-top: 4px;
+  list-style: none;
+  padding-top: 4px;
 }
 .subscription__item:nth-child(1) {
-    margin-bottom: 18px;
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: uppercase;
-    color: $Dark100;
+  margin-bottom: 18px;
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $Dark100;
 }
 .subscription__item:nth-child(2) {
-    margin-bottom: 23px;
-    width: 260px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: $Dark75;
+  margin-bottom: 23px;
+  width: 260px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $Dark75;
 }

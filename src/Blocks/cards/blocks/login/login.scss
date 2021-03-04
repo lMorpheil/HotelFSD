@@ -1,48 +1,48 @@
 .login {
-    max-width: 380px;
-    height: 358px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    padding: 39px 30px 32px 30px;
-    @media (max-width: 405px) {
-        padding: 39px 0px 32px 0px;
-    }
+  max-width: 380px;
+  height: 358px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 39px 30px 32px 30px;
+  @media (max-width: 405px) {
+    padding: 39px 0px 32px 0px;
+  }
 }
 .login__title {
-    font-family: $fQuick;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: $Dark100;
+  font-family: $fQuick;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: $Dark100;
 }
 .login__email {
-    margin: 13px 0 3px 0;
+  margin: 13px 0 3px 0;
 }
 .login__password {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 .login__creating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
 }
 .login__question {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    color: #000;
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
 }
 .login__sign-in {
-    width: 320px;
-    height: 44px;
+  width: 320px;
+  height: 44px;
 }
 .login__create {
-    width: 99px;
-    height: 44px;
+  width: 99px;
+  height: 44px;
 }

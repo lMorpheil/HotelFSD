@@ -1,26 +1,26 @@
 .checkbox__label span {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 18px;
-    color: $Dark75;
-    display: block;
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $Dark75;
+  display: block;
 }
 .checkbox__label span {
-    width: 230px;
+  width: 230px;
 }
 .richcheckbox {
-    & .checkbox__label {
-        font-family: $fMont;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        width: 240px;
-        color: $Dark50;
-    }
+  & .checkbox__label {
+    font-family: $fMont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    width: 240px;
+    color: $Dark50;
+  }
 }
 .richcheckbox__wrapper {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }

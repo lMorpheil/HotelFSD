@@ -5,20 +5,20 @@ mixin room(images, number, title,price,rate,review)
                 img(class="room__image" src=`${val}`, alt=`фото ${key}`)
             .room__indicator
                 .room__item.room__item_active
-                .room__item  
-                .room__item  
-                .room__item  
+                .room__item
+                .room__item
+                .room__item
         div(class="room__wrapper")
-            h1(class="room__title") 
-                span №
+            h1(class="room__title")
+                span.room__span №
                 = number
-                span= title
+                span.room__span= title
             p(class="room__description")
-                span= `${price}`
-                span ₽ 
-                span в сутки
+                span.room__span= `${price}`
+                span.room__span ₽ 
+                span.room__span в сутки
         div(class="room__line")
         div(class="room__rating")
             +ratebutton(rate)
             p.room__review= review
-                span  Отзывов
+                span.room__span  Отзывов

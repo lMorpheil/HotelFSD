@@ -6,5 +6,5 @@ mixin checkboxList(title, id, hidden,description = [{title: bool}] )
                 ul(class="checkboxlist__list" data-hidden)
                             each val, key in description
                                 each value, title in val
-                                    li(data-hidden)
+                                    li.checkboxlist__item(data-hidden)
                                         +checkbox(`breakfest_${id}_${key}`, title, value)

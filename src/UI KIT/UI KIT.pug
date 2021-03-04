@@ -1,14 +1,24 @@
 include ../Blocks/mixin.pug
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="Страница UI KIT для проекта TOXIN не адаптивная, не pixelperfect")
+        meta(name="keywords", content="")
+        title UI KIT
+    body 
 div(class="uikit")
     div(class="uikit__wrapper")
-        span Colors & Type
+        span.uikit__span Colors & Type
         +colorsandtype
         div(class="uikit__subwrapper")
-            span Form Elements
+            span.uikit__span Form Elements
             +formElements
     div(class="uikit__wrapper")
-        span Cards
+        span.uikit__span Cards
         +cards
     div(class="uikit__wrapper")
-        span Headers & Footers
+        span.uikit__span Headers & Footers
         +headerandfooter()

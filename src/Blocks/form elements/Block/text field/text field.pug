@@ -8,11 +8,11 @@ mixin textfield(type, id, place, title, subtitle, mask, form)
         input(
             id=`${id}`
             form=`${form}`
-            type=(type == "subscription") ? "email" : 
-                (type == "password") ? "password" : 
-                (type == "date") ? "date" : "text"  
-            class=(type == "subscription") ? "text-field__subscription" : 
-            ( mask != undefined ) ? 'text-filed__input_date' : 'text-field__input'
+            type=(type == "subscription") ? "email" :
+                (type == "password") ? "password" :
+                (type == "date") ? "date" : "text"
+            class=(type == "subscription") ? "text-field__subscription" :
+            ( mask != undefined ) ?  "text-filed__input_date " :  "text-field__input "
             placeholder=`${place}` 
             checked
             )

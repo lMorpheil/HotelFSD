@@ -1,58 +1,58 @@
 div > .ui-slider .ui-slider-handle {
-    width: 14px;
-    height: 14px;
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-    border: 2px solid #FFFFFF;
-    border-radius: 10px;
-    box-sizing: border-box;
-    outline: none;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  box-sizing: border-box;
+  outline: none;
 }
 .ui-slider-range {
-    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 }
 div > .ui-slider-horizontal {
-    height: 6px;
+  height: 6px;
 }
 .ui-slider {
-    width: 266px;
-    height: 6px;
-    background: #FFFFFF;
-    border: 1px solid $Dark25;
-    box-sizing: border-box;
-    border-radius: 3px;
+  width: 266px;
+  height: 6px;
+  background: #FFFFFF;
+  border: 1px solid $Dark25;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 .range__title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .range__input_first {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
-    color: $Dark100;
-    text-transform: uppercase;
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $Dark100;
+  text-transform: uppercase;
 }
 .range__input_second {
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: $Dark50;
-    border: none;
-        &:hover {
-            border: none;
-            outline: none;
-        }
-        &:active {
-            border: none;
-            outline: none;
-        }
-        &:focus {
-            border: none;
-            outline: none;
-        }
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $Dark50;
+  border: none;
+    &:hover {
+      border: none;
+      outline: none;
+    }
+    &:active {
+      border: none;
+      outline: none;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
 }

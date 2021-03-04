@@ -1,12 +1,12 @@
 .logo { 
-    &_grey {
-        background: url( /src/assets/images/logo-grey.svg);
-        width: 48px;
-        height: 48px;
-     }
-    &_color {
-        background: url(/src/assets/images/Logo-color.svg) left center no-repeat;
-        width: 106px;
-        height: 40px;
-    }
+  &_grey {
+    background: url( /src/assets/images/logo-grey.svg);
+    width: 48px;
+    height: 48px;
+   }
+  &_color {
+    background: url(/src/assets/images/Logo-color.svg) left center no-repeat;
+    width: 106px;
+    height: 40px;
+  }
 }

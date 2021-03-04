@@ -1,28 +1,28 @@
 .perfect {
-    display: flex;
-    justify-content: start;
-    align-content: space-between;
-    max-width: 281px;
-    padding-bottom: 20px;   
+  display: flex;
+  justify-content: start;
+  align-content: space-between;
+  max-width: 281px;
+  padding-bottom: 20px;   
 }
 .perfect_underline {
-    border-bottom: 1px solid opacify($color: $Dark5, $amount: 0.05);
+  border-bottom: 1px solid opacify($color: $Dark5, $amount: 0.05);
 }
 .perfect__image {
-    width: 48px;
-    height: 48px;
-    margin-right: 10px;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
 }
 .perfect__wrap p {
-    font-family: $fMont;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 24px;
-    color: $Dark75;
+  font-family: $fMont;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $Dark75;
 }
 .perfect__title-first {
-    font-weight: bold;
+  font-weight: bold;
 }  
 .perfect__title-second {
-    font-weight: normal;
+  font-weight: normal;
 }
