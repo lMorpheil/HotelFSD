@@ -10,7 +10,10 @@
  3. Запуск production сборки - npm run build
  <h2>При создании использовался стек технологий:</h2>
   Webpack, препроцессор CSS - SaSS, препроцессор HTML - PUG, JQuery, javaScript, BEM
+  
+  Так же в проекте использовался Eslint airbnb с плагином от FSD
  <h3>Так же использовались библиотеки JQuery UI:</h3>
+ 
 
  1.[Air Datepicker](https://github.com/t1m0n/air-datepicker)
 
