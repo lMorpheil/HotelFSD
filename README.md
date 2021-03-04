@@ -1,5 +1,5 @@
 <h1> Название проекта TOXIN</h1>
-  Верстка сайта отеля и ui-kit 
+  Верстка адаптивного сайта отеля и ui-kit из [макета в Figma](https://www.figma.com/file/xorjGw6bbI9mK7fZAMebJu/FSD-frontend-education-program.-The-2nd-task-Copy)
 <h2>Запуск проекта через Webpack</h2>
 
  1. Запуск dev сервера - npm run start
