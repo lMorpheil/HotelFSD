@@ -5,9 +5,9 @@
  2. Запуск dev сборки - npm run dev
  3. Запуск production сборки - npm run build
  <h2>При создании использовался стек технологий:</h2>
-   **Webpack**, препроцессор CSS - **SaSS**, препроцессор HTML - **PUG**, **JQuery**, **javaScript**
+  Webpack, препроцессор CSS - SaSS, препроцессор HTML - PUG, JQuery, ***javaScript***
  <h3>Так же использовались библиотеки JQuery UI:</h3>
  1.[Air Datepicker](https://github.com/t1m0n/air-datepicker)
- ***
+ <hr/>
  2.[maskedinput](https://github.com/digitalBush/jquery.maskedinput)
 <h2>Ссылки на страницы размещённые на github pages</h2>
