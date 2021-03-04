@@ -8,5 +8,6 @@
    **Webpack**, препроцессор CSS - **SaSS**, препроцессор HTML - **PUG**, **JQuery**, **javaScript**
  <h3>Так же использовались библиотеки JQuery UI:</h3>
  1.[Air Datepicker](https://github.com/t1m0n/air-datepicker)
+ ***
  2.[maskedinput](https://github.com/digitalBush/jquery.maskedinput)
 <h2>Ссылки на страницы размещённые на github pages</h2>
