@@ -1,0 +1,22 @@
+@import "../../../node_modules/air-datepicker/dist/css/datepicker.css";
+@import "../../components/fonts/fonts.scss";
+@import "../../components/colors/colors.scss";
+@import "../../components/Header&Footer/Header&Footer.scss";
+@import "../../components/form elements/form elements.scss";
+@import "../../components/cards/cards.scss";
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.toxin-registration {
+  background: url(../../assets/images/background-image4.jpg) center center no-repeat;
+  background-size: cover;
+  padding: 19px 0 19px 0;
+  display: flex;
+  justify-content: center;
+  flex: 1 0 auto;
+}

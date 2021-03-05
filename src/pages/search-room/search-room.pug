@@ -1,0 +1,104 @@
+include ../../components/mixin.pug
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="Страница подбора номера в отеле")
+        meta(name="keywords", content="")
+        title TOXIN
+    body
+        +header("",  "./login.html ", "./registration.html")
+        section.search-room
+            .search-room__filter
+                .search-room__input-wrap
+                    +textfield("text", "date","ДД.ММ.ГГГГ", "даты пребывания в отеле","", "date")
+                .search-room__input-wrap
+                    +dropdown("dropDownFormguestthree","Гости","","3","","1","","","","clear","appl")
+                .search-room__range-wrap
+                    +range("Диапазон цены")
+                    p.search-room__range Стоимость за сутки пребывания в номере
+                .search-room__checkbox
+                    .search-room__checkbox
+                        span.search-room__rules правила дома
+                    .search-room__checkbox
+                        +checkbox("vipe","Можно курить")
+                    .search-room__checkbox
+                        +checkbox("pet", "Можно с питомцами","checked")
+                    .search-room__checkbox
+                        +checkbox("guest", "Можно пригласить гостей (до 10 человек)","checked")
+                .search-room__description
+                    .search-room__checkbox
+                        .search-room__rules Доступность
+                    .search-room__checkbox
+                        +richCheckbox("rich_1", "<p><span>Широкий коридор</span>Ширина коридоров в номере<br/> не менее 91 см.</p>", "rich_2", "<p><span>Помощник для инвалидов</span> На 1 этаже вас встретит специалист  и проводит до номера.</p>")
+                .search-room__dropdown
+                    +dropdown("dropDownForm", "Удобства номера", "", "2", "2", "", "true")
+                .search-room__checkboxlist
+                    +checkboxList("дополнительные удобства", 1,false, [{Завтрак : false},{"Письменный стол": true},{"Стул для кормления" : true},{Кроватка : true},{Телевизор : false},{Шампунь : false}])
+            div(class="search-room__room")
+                h1(class="search-room__title") Номера, которые мы для вас подобрали
+                div.search-room__wrapper
+                    +room(["/src/assets/images/room-image2.jpg",
+                            "/src/assets/images/room-image.jpg",
+                            "/src/assets/images/room-image.jpg",
+                            "/src/assets/images/room-image.jpg"],
+                            " 888", "люкс", "9 990","5","145")
+                    +room(["/src/assets/images/room-image2.jpg",
+                            "/src/assets/images/room-image2.jpg",
+                            "/src/assets/images/room-image2.jpg",
+                            "/src/assets/images/room-image2.jpg"],
+                            " 840", "", "9 990","4","65")
+                    +room(["/src/assets/images/room-image3.jpg",
+                            "/src/assets/images/room-image3.jpg",
+                            "/src/assets/images/room-image3.jpg",
+                            "/src/assets/images/room-image3.jpg"],
+                            " 980", "люкс", "8 500","3","35")
+                    +room(["/src/assets/images/room-image4.jpg",
+                            "/src/assets/images/room-image4.jpg",
+                            "/src/assets/images/room-image4.jpg",
+                            "/src/assets/images/room-image4.jpg"],
+                            " 856", "", "7 300","5","19")
+                    +room(["/src/assets/images/room-image5.jpg",
+                            "/src/assets/images/room-image5.jpg",
+                            "/src/assets/images/room-image5.jpg",
+                            "/src/assets/images/room-image5.jpg"],
+                            " 740", "", "6 000","4","44")
+                    +room(["/src/assets/images/room-image6.jpg",
+                            "/src/assets/images/room-image6.jpg",
+                            "/src/assets/images/room-image6.jpg",
+                            "/src/assets/images/room-image6.jpg"],
+                            " 982", "", "5 800","3","56")
+                    +room(["/src/assets/images/room-image7.jpg",
+                            "/src/assets/images/room-image7.jpg",
+                            "/src/assets/images/room-image7.jpg",
+                            "/src/assets/images/room-image7.jpg"],
+                            " 678", "", "5 500","5","45")
+                    +room(["/src/assets/images/room-image8.jpg",
+                            "/src/assets/images/room-image8.jpg",
+                            "/src/assets/images/room-image8.jpg",
+                            "/src/assets/images/room-image8.jpg"],
+                            " 450", "", "5 300","4","39")
+                    +room(["/src/assets/images/room-image9.jpg",
+                            "/src/assets/images/room-image9.jpg",
+                            "/src/assets/images/room-image9.jpg",
+                            "/src/assets/images/room-image9.jpg"],
+                            " 350", "", "5 000","3","77")
+                    +room(["/src/assets/images/room-image10.jpg",
+                            "/src/assets/images/room-image10.jpg",
+                            "/src/assets/images/room-image10.jpg",
+                            "/src/assets/images/room-image10.jpg"],
+                            " 666", "", "5 000","5","25")
+                    +room(["/src/assets/images/room-image11.jpg",
+                            "/src/assets/images/room-image11.jpg",
+                            "/src/assets/images/room-image11.jpg",
+                            "/src/assets/images/room-image11.jpg"],
+                            " 444", "", "5 000","3","15")
+                    +room(["/src/assets/images/room-image12.jpg",
+                            "/src/assets/images/room-image12.jpg",
+                            "/src/assets/images/room-image12.jpg",
+                            "/src/assets/images/room-image12.jpg"],
+                            " 352", "", "5 000","3","55")
+        .search-room__pagination
+            +pagination
+        +footer("subscription")

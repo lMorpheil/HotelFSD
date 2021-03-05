@@ -1,0 +1,20 @@
+@import "../../components/fonts/fonts.scss";
+@import "../../components/colors/colors.scss";
+@import "../../components/form elements/form elements.scss";
+@import "../../components/cards/cards.scss";
+@import "../../components/Header&Footer/Header&Footer.scss";
+body {
+    background: #E5E5E5;
+}
+.uikit {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.uikit__wrapper {
+    padding-top: 30px;
+    margin-right: 50px;
+}
+.uikit__subwrapper {
+    padding-top: 30px;
+}

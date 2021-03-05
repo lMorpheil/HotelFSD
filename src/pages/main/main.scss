@@ -1,0 +1,53 @@
+@import "../../../node_modules/air-datepicker/dist/css/datepicker.css";
+@import "../../components/fonts/fonts.scss";
+@import "../../components/colors/colors.scss";
+@import "../../components/Header&Footer/Header&Footer.scss";
+@import "../../components/form elements/form elements.scss";
+@import "../../components/cards/cards.scss";
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.toxin-section {
+  width: 100%;
+  flex: 1 0 auto;
+}
+.toxin-section__background {
+  background: url(../../assets/images/main-background.jpg) center center no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.toxin-section__search {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px 120px 20px 140px;
+  @media (max-width: 905px) {
+    padding: 70px 0 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.toxin-section__postscript {
+  padding-top: 318px;
+  display: flex;
+  justify-content: flex-end;
+  @media (max-width: 905px) {
+    justify-content: center;
+  }
+}
+.toxin-section__title {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 275px;
+  color: $Dark75;
+  text-align: right;
+  padding-right: 15px;
+}
