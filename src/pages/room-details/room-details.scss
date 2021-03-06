@@ -15,7 +15,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  flex: 1 0 auto;
   @media (max-width: 1024px) {
     flex-direction: column;
   }
@@ -24,6 +23,7 @@ body {
   background: url(../../assets/images/room-details-main.jpg) center center no-repeat;
   background-size: cover;
   height: 485px;
+  width: 100%;
   flex-grow: 2;
 }
 .picture__right-group {
