@@ -1,46 +1,46 @@
-let dropdown = document.querySelectorAll('.dropdown');
+const dropdown = document.querySelectorAll('.dropdown');
 
 for (let i = 0; i < dropdown.length; i++) {
   const element = dropdown[i];
 
-  let minus = element.querySelectorAll('.dropdown__minus');
-  let plus = element.querySelectorAll('.dropdown__plus');
-  let input = element.querySelectorAll('.dropdown__number');
-  let mainInput = element.querySelector('.dropdown__input');
-  let dropDownWindow = element.querySelector('.dropdown__window');
-  let label = element.querySelector('.dropdown__label');
-  let mainInputDataBorder = element.querySelector('input[data-border]');
-  let clear = document.querySelectorAll('.dropdown .clear');
-  let apply = document.querySelectorAll('.dropdown .apply');
+  const minus = element.querySelectorAll('.dropdown__minus');
+  const plus = element.querySelectorAll('.dropdown__plus');
+  const input = element.querySelectorAll('.dropdown__number');
+  const mainInput = element.querySelector('.dropdown__input');
+  const dropDownWindow = element.querySelector('.dropdown__window');
+  const label = element.querySelector('.dropdown__label');
+  const mainInputDataBorder = element.querySelector('input[data-border]');
+  const clear = document.querySelectorAll('.dropdown .clear');
+  const apply = document.querySelectorAll('.dropdown .apply');
 
-  //Задаём значение input если значение не задано
-  for (let i = 0; i < input.length; i++) {
-    if (input[i].value == '') {
-      input[i].value =0;
+  //  Задаём значение input если значение не задано
+  for (let j = 0; j < input.length; j++) {
+    if (input[j].value == '') {
+      input[j].value = 0;
     }
   }
   getValue();
-  for (let i = 0; i < minus.length; i++) {
-  //Функции обработчика событий нажатия на кнопки minus
-  function negative () {
-    if (input[i].value > 0) {
-      input[i].value -= 1;
+  for (let k = 0; k < minus.length; k++) {
+  //  Функции обработчика событий нажатия на кнопки minus
+    function negative () {
+      if (input[k].value > 0) {
+        input[k].value -= 1;
+      }
     }
-  }
-  //Обработчики событий кнопок minus
-  minus[i].addEventListener('click', negative);
-  minus[i].addEventListener('click', getValue);
+    //  Обработчики событий кнопок minus
+    minus[i].addEventListener('click', negative);
+    minus[i].addEventListener('click', getValue);
   }
   for (let i = 0; i < plus.length; i++) {
-  //Функции обработчика событий нажатия на кнопки plus
+  //  Функции обработчика событий нажатия на кнопки plus
   function sum () {
     input[i].value = +input[i].value + 1;
   }
-  //Обработчики событий кнопок plus
-  plus[i].addEventListener('click', sum);
-  plus[i].addEventListener('click', getValue);
+  //  Обработчики событий кнопок plus
+    plus[i].addEventListener('click', sum);
+    plus[i].addEventListener('click', getValue);
   }
-  //Работа с главным окном Input
+  //  Работа с главным окном Input
   function getValue () {
   if (label.innerHTML == 'Взрослые') {
     let summa = +input[0].value + +input[1].value;
@@ -82,7 +82,7 @@ for (let i = 0; i < dropdown.length; i++) {
     }
   }
   }
-  //Функция выпадающего окна
+  //  Функция выпадающего окна
   function hidden () {
   dropDownWindow.classList.toggle('dropdown__window_hidden');
   }
@@ -104,9 +104,9 @@ for (let i = 0; i < dropdown.length; i++) {
   }
   }
 
-  //Обработчики события выпадающего окна
+  //  Обработчики события выпадающего окна
   mainInput.addEventListener('click', hidden);
   mainInputDataBorder.addEventListener('click', addBorder);
-  window.addEventListener('click', addwindowBorder );
+  window.addEventListener('click', addwindowBorder);
   window.addEventListener('click', hiddenOnDocument);
 }

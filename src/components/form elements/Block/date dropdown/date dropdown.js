@@ -25,7 +25,7 @@ $('.datepicker-here').datepicker({
 
 
 
-//маска инпута
+//  маска инпута
 $('.date__input').toArray().forEach(function (field) {
   new Cleave(field, {
     date: true,
@@ -42,6 +42,3 @@ $('.date__from').datepicker({
     $(".date__to").val(fd.split("-")[1]);
   }
 });
-
-
-

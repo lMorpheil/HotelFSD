@@ -3,7 +3,7 @@
   height: 24px;
   background: #fff url(/src/assets/images/star_border.svg) center center no-repeat;
   border: none;
-  &:hover, &:active, &:focus, &:visited {
+  &:hover, &:active, &:visited, &:focus {
     outline: none;
   }
 }
@@ -12,7 +12,7 @@
   height: 24px;
   border: none;
   background: #fff url(/src/assets/images/star.svg) center center no-repeat;
-  &:hover, &:active, &:focus, &:visited {
+  &:hover, &:active, &:visited, &:focus {
     outline: none;
   }
 }

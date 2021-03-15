@@ -29,8 +29,10 @@ mixin dropdown(id, name, title, item1, item2, item3, switcher, width,open,clear,
                     button(type="button" class="dropdown__plus") +
             div(class="dropdown__buttons")
                 if (clear)
-                    +button("очистить","","","dark","","","","link", "clear" )
+                    .dropdown__button
+                        +button("очистить","","dark","","","","link", "clear" )
                 else
                     div.dropdown__wpapper
                 if (apple)
-                    +button("применить","","","dark","","","","link", "apply" )
+                    .dropdown__button
+                        +button("применить","","dark","","","","link", "apply" )

@@ -15,6 +15,10 @@
     vertical-align: middle;
   }
 }
+.pagination__item {
+  width: 40px;
+  height: 40px;
+}
 .pagination__items { 
    width: 40px;
    height: 40px;
@@ -29,7 +33,7 @@
 .pagination__items_activ {
   background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
   border-radius: 22px;
-  & a {  
+  & a {
     color: #FFF;
   }
 }
@@ -43,7 +47,7 @@
   border-radius: 22px;
   border: 0px;
   cursor: pointer;
-  &:focus, &:active, &:hover, &:visited {
+  &:active, &:hover, &:visited {
     outline: none;
   }
 }

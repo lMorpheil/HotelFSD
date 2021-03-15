@@ -11,4 +11,4 @@ $( function() {
     });
     $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) + " 000" + "₽" +
       " - " + $( "#slider-range" ).slider( "values", 1 ) + " 000" + "₽" );
-  } );
+  });

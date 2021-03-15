@@ -42,7 +42,7 @@
     color: $Dark75;
     background: url(/src/assets/images/expand_more.svg) right center no-repeat;
   }
-  &:hover, &:active, &:visited, &:focus {
+  &:hover, &:active, &:visited {
     outline: none;
   }
 }
@@ -201,7 +201,7 @@
     line-height: 24px;
     color: $Dark75;
   }
-  &:hover, &:active, &:visited, &:focus {
+  &:hover, &:active, &:visited {
     outline: none;
   }
 }
