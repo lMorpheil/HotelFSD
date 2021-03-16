@@ -7,7 +7,7 @@
   border-radius: 10px;
   padding: 0 4px 0 20px;
   cursor: pointer;
-  background: url(/src/assets/images/favorite_border.svg) 20% center no-repeat;
+  background: url(../../assets/images/favorite_border.svg) 20% center no-repeat;
   font-family: $fMont;
   font-style: normal;
   font-weight: normal;
@@ -20,12 +20,12 @@
   }
   &:hover {
     border: 1px solid linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
-    background: url(/src/assets/images/favorite.svg) 20% center no-repeat;
+    background: url(../../assets/images/favorite.svg) 20% center no-repeat;
     color: $purple;
   }
 }
 .likebutton_onclick {
-  background: url(/src/assets/images/favorite.svg) 20% center no-repeat;
+  background: url(../../assets/images/favorite.svg) 20% center no-repeat;
   border: 1px solid linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
   color: $purple;
 }

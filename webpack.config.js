@@ -11,13 +11,8 @@ const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
 const fonts = require('./webpack/fonts');
 const fs = require('fs');
-
-const PATHS = {
-  source: path.join(__dirname, 'src'),
-  build: path.join(__dirname, 'build'),
-};
-const PAGES_DIR = `${PATHS.source}/pages/`;
-const PAGES = fs.readdirSync(PAGES_DIR).filter((fileName) => fileName.endsWith('.pug'));
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const common = merge([
   {
@@ -31,23 +26,53 @@ const common = merge([
     },
     output: {
       filename: '[name].js',
-      path: __dirname + '/dist'
+      path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      ...PAGES.map(
-        (page) =>
-          new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/, '.html')}`,
-            minify: false,
-          // template: './src/pages/room-details/room-details.pug',
-          }),
-      ),
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './src/pages/main/main.pug',
+        chunks: ['main'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'registration.html',
+        template: './src/pages/registration/registration.pug',
+        chunks: ['registration'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'login.html',
+        template: './src/pages/login/login.pug',
+        chunks: ['login'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'search-room.html',
+        template: './src/pages/search-room/search-room.pug',
+        chunks: ['search-room'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'room-details.html',
+        template: './src/pages/room-details/room-details.pug',
+        chunks: ['room-details'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'UI KIT.html',
+        template: './src/pages/UI KIT/UI KIT.pug',
+        chunks: ['UI KIT'],
+      }),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
         'window.$': 'jquery',
+      }),
+      new CleanWebpackPlugin(),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: 'src/assets/images',
+            to: 'images/[path][name].[ext]',
+          },
+        ],
       }),
     ],
   },

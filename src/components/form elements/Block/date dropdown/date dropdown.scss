@@ -40,7 +40,7 @@
     font-size: 14px;
     line-height: 18px;
     color: $Dark75;
-    background: url(/src/assets/images/expand_more.svg) right center no-repeat;
+    background: url(../../assets/images/expand_more.svg) right center no-repeat;
   }
   &:hover, &:active, &:visited {
     outline: none;
@@ -192,7 +192,7 @@
   padding: 0 15px 0 15px;
   display: block;
   margin-top: 5px;
-  background: url(/src/assets/images/expand_more.svg) 94% center no-repeat;
+  background: url(../../assets/images/expand_more.svg) 94% center no-repeat;
   &::placeholder {
     font-family: $fMont;
     font-style: normal;

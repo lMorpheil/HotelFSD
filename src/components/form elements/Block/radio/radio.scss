@@ -24,7 +24,7 @@
 }
 .radio__input:checked {
   +label::before {
-    background: url(/src/assets/images/Rectangle.svg) center center no-repeat;
+    background: url(../../assets/images/Rectangle.svg) center center no-repeat;
     border: 1px solid $purple;
   }
   +label {

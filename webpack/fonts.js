@@ -3,10 +3,12 @@ module.exports = function () {
     module: {
       rules: [
         {
-          test: /\.(ttf|woff|svg|svg)$/,
-          loader: "file-loader",
+          test: /\.(ttf|eot|woff|woff2)$/,
+          loader: 'file-loader',
           options: {
-            name: "fonts/[name].[ext]",
+            name: '[name].[ext]',
+            outputPath: 'fonts/',
+            publicPath: '../fonts/',
           },
         },
       ],

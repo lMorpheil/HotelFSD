@@ -20,12 +20,12 @@
       flex-grow: 0;
       flex-shrink: 0;
       box-sizing: border-box;
-      background: url(/src/assets/images/Rectangle-toggle-off.svg) 4px center no-repeat;
+      background: url(../../assets/images/Rectangle-toggle-off.svg) 4px center no-repeat;
     }
 }
 .toggle__input:checked {
     +label::before {
-      background: url(/src/assets/images/Rectangle-toggle-on.svg) 24px center no-repeat;
+      background: url(../../assets/images/Rectangle-toggle-on.svg) 24px center no-repeat;
       border: 1px solid $purple;
     }
 }

@@ -4,13 +4,8 @@
 @import "../../components/form elements/form elements.scss";
 @import "../../components/cards/cards.scss";
 
-html {
-  height: 100%;
-}
-body {
-  display: flex;
-  flex-direction: column;
-}
+
+
 .picture {
   display: flex;
   justify-content: space-between;
@@ -23,7 +18,6 @@ body {
   background: url(../../assets/images/room-details-main.jpg) center center no-repeat;
   background-size: cover;
   height: 485px;
-  width: 100%;
   flex-grow: 2;
 }
 .picture__right-group {

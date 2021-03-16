@@ -4,9 +4,11 @@ module.exports = function () {
       rules: [
         {
           test: /\.(jpg|png|svg|gif)$/,
-          loader: "file-loader",
+          loader: 'file-loader',
           options: {
-            name: "file-loader?name=images/[name].[ext]",
+            name: '[name].[ext]',
+            outputPath: 'images/',
+            publicPath: '../images',
           },
         },
       ],

@@ -1,7 +1,7 @@
 .ratebutton__button {
   width: 24px;
   height: 24px;
-  background: #fff url(/src/assets/images/star_border.svg) center center no-repeat;
+  background: #fff url(../../assets/images/star_border.svg) center center no-repeat;
   border: none;
   &:hover, &:active, &:visited, &:focus {
     outline: none;
@@ -11,7 +11,7 @@
   width: 24px;
   height: 24px;
   border: none;
-  background: #fff url(/src/assets/images/star.svg) center center no-repeat;
+  background: #fff url(../../assets/images/star.svg) center center no-repeat;
   &:hover, &:active, &:visited, &:focus {
     outline: none;
   }

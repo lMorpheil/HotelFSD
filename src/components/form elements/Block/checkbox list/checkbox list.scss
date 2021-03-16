@@ -1,10 +1,10 @@
 .checkboxlist__titlewrapper {
   width: 266px;
-  background: url(/src/assets/images/expand_more.svg) 90% center no-repeat;
+  background: url(../../assets/images/expand_more.svg) 90% center no-repeat;
   cursor: pointer;
 }
 .checkboxlist__titlewrapper_onclick {
-  background: url(/src/assets/images/expand_more_onclick.svg) 90% center no-repeat;
+  background: url(../../assets/images/expand_more_onclick.svg) 90% center no-repeat;
 }
 .checkboxlist__listwrapper {
   display: none;
