@@ -28,8 +28,8 @@ for (let i = 0; i < dropdown.length; i++) {
       }
     }
     //  Обработчики событий кнопок minus
-    minus[i].addEventListener('click', negative);
-    minus[i].addEventListener('click', getValue);
+    minus[k].addEventListener('click', negative);
+    minus[k].addEventListener('click', getValue);
   }
   for (let i = 0; i < plus.length; i++) {
   //  Функции обработчика событий нажатия на кнопки plus

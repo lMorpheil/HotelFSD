@@ -1,16 +1,14 @@
-const like = document.querySelectorAll('.likebutton');
-
-for (let i = 0; i < like.length; i++) {
-  const element = like[i];
-  //  функция обработчика события
-  const likeButton = function () {
-    this.classList.toggle('likebutton_onclick');
-    const count = this.value;
-    if (this.classList.contains('likebutton_onclick')) {
-      this.value = +count + 1;
-    } else {
-      this.value = +count - 1;
-    }
-  };
-  element.addEventListener('click', likeButton);
+const likes = Array.from(document.querySelectorAll('.likebutton'));
+//  функция обработчик события
+function likeButton(event) {
+  const count = event.currentTarget.value;
+  event.currentTarget.classList.toggle('likebutton_onclick');
+  if (event.currentTarget.classList.contains('likebutton_onclick')) {
+    event.currentTarget.value = +count + 1;
+  } else {
+    event.currentTarget.value = +count - 1;
+  }
 }
+likes.forEach((element) => {
+  element.addEventListener('click', likeButton);
+});

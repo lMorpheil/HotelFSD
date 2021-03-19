@@ -1,6 +1,6 @@
 require('cleave.js');
 
-$('.text-filed__input_date').toArray().forEach((field) => {
+$('.js-text-filed__input_date').toArray().forEach((field) => {
   new Cleave(field, {
     date: true,
     delimiter: '.',

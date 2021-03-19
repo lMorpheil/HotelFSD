@@ -1,24 +1,21 @@
-@import "../logo/logo.scss";
-@import "../fonts/fonts.scss";
+@import "../../components/util/variables.scss";
+@import "../../components/fonts/fonts.scss";
+@import "../../components/logo/logo.scss";
 
-$Dark100: #1F2041;
-$Dark75: rgba(31, 32, 65, 0.75);
-$Dark50: rgba(31, 32, 65, 0.5);
-$Dark25: rgba(31, 32, 65, 0.25);
-$Dark5: rgba(31, 32, 65, 0.05);
-$purple: #BC9CFF;
-$green: #6FCF97;
-
-.colors__wrapper {
+.colors {
   background: #fff;
   padding: 30px 191px 145px 30px;
-  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .colors__wrap {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 67px 0 0 150px;
+  @media (max-width: 1080px){
+    flex-direction: column;
+  }
 }
 .colors__color li {
   position: relative;
@@ -280,18 +277,5 @@ $green: #6FCF97;
       position: absolute;
       left: -70px;
     }
-  }
-}
-@media screen and (max-width: 1200px) {
-  .wrapper {
-    padding: 67px 30px 0 30px;
-  }
-}
-@media screen and (max-width: 760px) {
-  .wrapper {
-    display: block;
-    margin: 0 auto;
-    width: 360px;
-    padding: 67px 0 0 0;
   }
 }

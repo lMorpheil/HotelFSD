@@ -1,5 +1,4 @@
 const slider = document.querySelectorAll('.room__slider');
-
 for (let i = 0; i < slider.length; i++) {
   const images = slider[i].querySelectorAll('.room__image');
   const items = slider[i].querySelectorAll('.room__item');
@@ -10,25 +9,26 @@ for (let i = 0; i < slider.length; i++) {
   }
   let step = 0;
   let offset = 0;
-  function draw () {
-    let img = document.createElement('img');
+  // Отрисовка картинок
+  const draw = function () {
+    const img = document.createElement('img');
     img.src = slides[step];
     img.classList.add('room__image');
-    img.style.left = offset*270 + 'px';
+    img.style.left = `${offset * 270}px`;
     slider[i].appendChild(img);
-
-    if (step == slides.length - 1) {
-        step = 0;
+    if (step === slides.length - 1) {
+      step = 0;
     } else {
-        step++;
+      step++;
     }
     offset = 1;
-  }
-  function itemMove() {
+  };
+  // Индикатор на картинке
+  const itemMove = function () {
     for (let z = 0; z <= items.length - 1; z++) {
       if (items[z].classList.contains('room__item_active')) {
         items[z].classList.remove('room__item_active');
-        if (z == items.lenght - 1) {
+        if (z === items.length - 1) {
           z = 0;
           items[z].classList.add('room__item_active');
         } else {
@@ -36,12 +36,13 @@ for (let i = 0; i < slider.length; i++) {
         }
       }
     }
-  }
-  function move() {
-    let slidesView = slider[i].querySelectorAll('.room__image');
+  };
+  // Функция движения
+  const move = function () {
+    const slidesView = slider[i].querySelectorAll('.room__image');
     let offsetView = 0;
     for (let k = 0; k < slidesView.length; k++) {
-      slidesView[k].style.left = offsetView * 270 - 270 + 'px';
+      slidesView[k].style.left = `${offsetView * 270 - 270}px`;
       offsetView++;
     }
     itemMove();
@@ -49,8 +50,8 @@ for (let i = 0; i < slider.length; i++) {
       slidesView[0].remove();
     }, 1000);
     draw();
-  }
+  };
   draw();
   draw();
-  let timerMove = setInterval(move, 2000);
+  setInterval(move, 2000);
 }
