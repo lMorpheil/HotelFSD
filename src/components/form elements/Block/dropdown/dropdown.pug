@@ -1,14 +1,14 @@
-mixin dropdown(id, name, title, item1, item2, item3, switcher, width,open,clear,apple)
+mixin dropdown(id, name, title, item1, item2, item3, switcher,open,clear,apple)
     div(class="dropdown")
-        div(class="dropdown__wraplabel" style=`width: ${width}`)
+        div(class="dropdown__wraplabel")
             label(for=`${id}` class="dropdown__title")
                 span.dropdown__span=`${name}`
                 span.dropdown__span=`${title}`
-        input(style=`width: ${width}` type="text"
+        input(type="text"
                 class=( switcher ? "dropdown__input_border dropdown__input" : "dropdown__input")
                 class=(open ? "dropdown__input_border" : "")
                 readonly id=`${id}` data-border data-style= switcher ? true : false )
-        div(class=(open ? "dropdown__window dropdown__window_hidden" : "dropdown__window dropdown__input_border") data-window style=`width: ${width}`)
+        div(class=(open ? "dropdown__window dropdown__window_hidden" : "dropdown__window dropdown__input_border") data-window)
             div(class="dropdown__item")
                 label(for="bedroom" class="dropdown__label")=(switcher ? "Спальни" : "Взрослые")
                 div.dropdown__wpapper

@@ -4,16 +4,15 @@
 .pagination__list {
   list-style: none;
   display: flex;
-  & a {
-    text-decoration: none;
-    font-family: $fMont;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: $Dark50;
-    vertical-align: middle;
-  }
+}
+.pagination__items {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: $Dark50;
+  vertical-align: middle;
 }
 .pagination__item {
   width: 40px;
@@ -30,12 +29,10 @@
 .pagination__items_ellipsis {
   display: none;
 }
-.pagination__items_activ {
+.pagination__items_active {
   background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
   border-radius: 22px;
-  & a {
-    color: #FFF;
-  }
+  color: #FFF;
 }
 .pagination__wrapper {
   display: flex;

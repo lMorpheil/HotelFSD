@@ -1,3 +1,6 @@
+.dropdown {
+  max-width: 320px;
+}
 .dropdown__title {
   font-family: $fMont;
   font-style: normal;
@@ -20,10 +23,10 @@
   }
 }
 .dropdown__wraplabel {
-  width: 266px;
+  max-width: 320px;
 }
 .dropdown__input {
-  width: 266px;
+  width: 100%;
   height: 44px;
   font-family: $fMont;
   font-style: normal;
@@ -55,7 +58,7 @@
   border-radius: 0 0 4px 4px;
   background: #fff;
   border-top: none;
-  width: 266px;
+  width: 320px;
   display:none;
   z-index: 3;
 }

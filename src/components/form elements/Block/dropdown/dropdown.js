@@ -5,13 +5,13 @@ for (let i = 0; i < dropdown.length; i++) {
 
   const minus = element.querySelectorAll('.dropdown__minus');
   const plus = element.querySelectorAll('.dropdown__plus');
-  const input = element.querySelectorAll('.dropdown__number');
+  const input = Array.from(element.querySelectorAll('.dropdown__number'));
   const mainInput = element.querySelector('.dropdown__input');
   const dropDownWindow = element.querySelector('.dropdown__window');
   const label = element.querySelector('.dropdown__label');
   const mainInputDataBorder = element.querySelector('input[data-border]');
-  const clear = document.querySelectorAll('.dropdown .clear');
-  const apply = document.querySelectorAll('.dropdown .apply');
+  const clear = Array.from(document.querySelectorAll('.dropdown .clear'));
+  const apply = Array.from(document.querySelectorAll('.dropdown .apply'));
   //  Работа с главным окном Input
   const getValue = function () {
     if (label.innerHTML === 'Взрослые') {
@@ -81,7 +81,6 @@ for (let i = 0; i < dropdown.length; i++) {
     plus[l].addEventListener('click', sum);
     plus[l].addEventListener('click', getValue);
   }
-
   //  Функция выпадающего окна
   const hidden = function () {
     dropDownWindow.classList.toggle('dropdown__window_hidden');
@@ -110,4 +109,31 @@ for (let i = 0; i < dropdown.length; i++) {
   mainInputDataBorder.addEventListener('click', addBorder);
   window.addEventListener('click', addWindowBorder);
   window.addEventListener('click', hiddenOnDocument);
+  //  Работа с кнопками
+  //  Обработчик кнопки apply
+  const handleHiddenDropdown = function () {
+    dropDownWindow.classList.remove('dropdown__window_hidden');
+  };
+  apply.forEach((applyButton) => {
+    applyButton.addEventListener('click', handleHiddenDropdown);
+  });
+  //  Обработчики кнопки clear
+  const handleClearInputClear = function () {
+    input.forEach((elem) => {
+      elem.value = 0;
+    });
+  };
+  const handleClearMainInputClear = function (event) {
+    const parent = event.target.closest('.dropdown');
+    const changeInput = parent.querySelector('.dropdown__input');
+    if (label.innerHTML === 'Взрослые') {
+      changeInput.value = 'Сколько гостей';
+    } else {
+      changeInput.value = 'Удобства';
+    }
+  };
+  clear.forEach((clearButton) => {
+    clearButton.addEventListener('click', handleClearInputClear);
+    clearButton.addEventListener('click', handleClearMainInputClear);
+  });
 }
