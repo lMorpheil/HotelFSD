@@ -13,70 +13,69 @@ const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
 const fonts = require('./webpack/fonts');
 
-
 const common = merge([
   {
     entry: {
-      // main: './src/pages/main/main.js',
-      // registration: './src/pages/registration/registration.js',
-      // login: './src/pages/login/login.js',
-      //'search-room': './src/pages/search-room/search-room.js',
-      //'room-details': './src/pages/room-details/room-details.js',
-      //colors: './src/pages/colors/colors.js',
+      main: './src/pages/main/main.js',
+      registration: './src/pages/registration/registration.js',
+      login: './src/pages/login/login.js',
+      'search-room': './src/pages/search-room/search-room.js',
+      'room-details': './src/pages/room-details/room-details.js',
+      colors: './src/pages/colors/colors.js',
       forms: './src/pages/forms/forms.js',
-      // cards: './src/pages/cards/cards.js',
-      // 'header & footer': './src/pages/header & footer.js',
+      cards: './src/pages/cards/cards.js',
+      'header & footer': './src/pages/header & footer.js',
     },
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // new HtmlWebpackPlugin({
-      //   filename: 'main.html',
-      //   template: './src/pages/main/main.pug',
-      //   chunks: ['main'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'registration.html',
-      //   template: './src/pages/registration/registration.pug',
-      //   chunks: ['registration'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'login.html',
-      //   template: './src/pages/login/login.pug',
-      //   chunks: ['login'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: './src/pages/search-room/search-room.pug',
-      //   chunks: ['search-room'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: './src/pages/room-details/room-details.pug',
-      //   chunks: ['room-details'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: './src/pages/cards/cards.pug',
-      //   chunks: ['cards'],
-      // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'colors.html',
-      //   template: './src/pages/colors/colors.pug',
-      //   chunks: ['colors'],
-      // }),
       new HtmlWebpackPlugin({
-        filename: 'index.html',
+        filename: 'main.html',
+        template: './src/pages/main/main.pug',
+        chunks: ['main'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'registration.html',
+        template: './src/pages/registration/registration.pug',
+        chunks: ['registration'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'login.html',
+        template: './src/pages/login/login.pug',
+        chunks: ['login'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'search-room.html',
+        template: './src/pages/search-room/search-room.pug',
+        chunks: ['search-room'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'room-details.html',
+        template: './src/pages/room-details/room-details.pug',
+        chunks: ['room-details'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'cards.html',
+        template: './src/pages/cards/cards.pug',
+        chunks: ['cards'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'colors.html',
+        template: './src/pages/colors/colors.pug',
+        chunks: ['colors'],
+      }),
+      new HtmlWebpackPlugin({
+        filename: 'forms.html',
         template: './src/pages/forms/forms.pug',
         chunks: ['forms'],
       }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: './src/pages/header & footer.pug',
-      //   chunks: ['header & footer'],
-      // }),
+      new HtmlWebpackPlugin({
+        filename: 'header & footer.html',
+        template: './src/pages/header & footer.pug',
+        chunks: ['header & footer'],
+      }),
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
