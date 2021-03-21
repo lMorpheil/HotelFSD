@@ -13,7 +13,7 @@ mixin toBook(number,title,price,id,sum,day)
             .toBook__wrapper
                 +date(true,true)
             .toBook__wrapper
-                +dropdown(`${id}`, "гости", "", "", "", "3", "", "320px")
+                +dropdown(`${id}`, "гости", "", "", "", "3")
             ul.toBook__services
                 li.toBook__item
                     span.toBook__span= `${price}₽ х ${day} суток`

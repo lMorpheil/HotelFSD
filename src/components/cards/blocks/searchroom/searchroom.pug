@@ -4,6 +4,6 @@ mixin searchroom(id)
             h1.searchroom__title Найдём номера под ваши пожелания
             +date(true,true,"прибытие", "выезд")
             .searchroom__dropdown
-                +dropdown(`${id}`, "гости", "", "", "", "", "", "320px")
+                +dropdown(`${id}`, "гости", "", "", "", "", "")
             .searchroom__button
                 +button("подобрать номер","background","dark","arrow")

@@ -49,11 +49,7 @@
 .datepicker-here {
   box-shadow: 0 10px 20px $Dark5;
 }
-#datepickers-container {
-  position: absolute;
-  left: 0;
-  top: 54px;
-}
+
 .datepicker.-from-bottom- {
   width: 320px;
   height: 369px;
@@ -72,7 +68,6 @@
   box-sizing: border-box;
   border-radius: 4px;
   & .datepicker--nav-title {
-  width: 114px;
   height: 47px;
   font-family: $fMont;
   font-style: normal;
@@ -150,6 +145,7 @@
     border: none;
   }
   & .datepicker--nav-action {
+    visibility: visible;
     & path {
       stroke: none;
       fill: $purple;
