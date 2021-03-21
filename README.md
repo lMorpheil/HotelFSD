@@ -22,12 +22,22 @@
  2.[maskedinput](https://github.com/digitalBush/jquery.maskedinput)
 <h2>Ссылки на страницы размещённые на github pages</h2>
 # Ссылки на страницы
+
 1. [Главная](https://lmorpheil.github.io/HotelFSD/main.html)
+
 2. [Регистрация](https://lmorpheil.github.io/HotelFSD/registration.html)
+
 3. [Логин](https://lmorpheil.github.io/HotelFSD/login.html)
+
 4. [Поиск номера](https://lmorpheil.github.io/HotelFSD/search-room.html)
+
 5. [детали номера](https://lmorpheil.github.io/HotelFSD/room-details.html)
+
 6. [Colors](https://lmorpheil.github.io/HotelFSD/colors.html)
+
 7. [Forms Elements](https://lmorpheil.github.io/HotelFSD/forms.html)
+
 8. [Cards](https://lmorpheil.github.io/HotelFSD/cards.html)
+ 
 9. []()
+
