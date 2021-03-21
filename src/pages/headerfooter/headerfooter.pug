@@ -1,0 +1,18 @@
+include ../../components/mixin.pug
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Header & Footer
+  body
+  div(class="headerandfooter")
+    div(class="headerandfooter__logo")
+      +logo()
+    div(class="headerandfooter__header")
+      +header
+    div(class="headerandfooter__header")
+      +header("login")
+    div(class="headerandfooter__footer")
+      +footer("foter-full")

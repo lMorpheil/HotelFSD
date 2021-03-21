@@ -12,7 +12,7 @@ html(lang="ru")
         section.search-room
             .search-room__filter
                 .search-room__input-wrap
-                    +textfield("text", "date","ДД.ММ.ГГГГ", "даты пребывания в отеле","", "date")
+                    +date(true, false,"","","даты пребывания в отеле")
                 .search-room__input-wrap
                     +dropdown("dropDownFormguestthree","Гости","","3","","1","","","","clear","appl")
                 .search-room__range-wrap
@@ -100,5 +100,5 @@ html(lang="ru")
                             "./images/room-image12.jpg"],
                             " 352", "", "5 000","3","55")
         .search-room__pagination
-            +pagination
+            +pagination(15)
         +footer("subscription")

@@ -20,12 +20,12 @@ const common = merge([
       // main: './src/pages/main/main.js',
       // registration: './src/pages/registration/registration.js',
       // login: './src/pages/login/login.js',
-      //'search-room': './src/pages/search-room/search-room.js',
-      //'room-details': './src/pages/room-details/room-details.js',
-      //colors: './src/pages/colors/colors.js',
-      forms: './src/pages/forms/forms.js',
+      'search-room': './src/pages/search-room/search-room.js',
+      // 'room-details': './src/pages/room-details/room-details.js',
+      // colors: './src/pages/colors/colors.js',
+      // forms: './src/pages/forms/forms.js',
       // cards: './src/pages/cards/cards.js',
-      // 'header & footer': './src/pages/header & footer.js',
+      // headerfooter: './src/pages/headerfooter/headerfooter.js',
     },
     output: {
       filename: '[name].js',
@@ -47,11 +47,11 @@ const common = merge([
       //   template: './src/pages/login/login.pug',
       //   chunks: ['login'],
       // }),
-      // new HtmlWebpackPlugin({
-      //   filename: 'index.html',
-      //   template: './src/pages/search-room/search-room.pug',
-      //   chunks: ['search-room'],
-      // }),
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './src/pages/search-room/search-room.pug',
+        chunks: ['search-room'],
+      }),
       // new HtmlWebpackPlugin({
       //   filename: 'index.html',
       //   template: './src/pages/room-details/room-details.pug',
@@ -67,15 +67,15 @@ const common = merge([
       //   template: './src/pages/colors/colors.pug',
       //   chunks: ['colors'],
       // }),
-      new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: './src/pages/forms/forms.pug',
-        chunks: ['forms'],
-      }),
       // new HtmlWebpackPlugin({
       //   filename: 'index.html',
-      //   template: './src/pages/header & footer.pug',
-      //   chunks: ['header & footer'],
+      //   template: './src/pages/forms/forms.pug',
+      //   chunks: ['forms'],
+      // }),
+      // new HtmlWebpackPlugin({
+      //   filename: 'index.html',
+      //   template: './src/pages/headerfooter/headerfooter.pug',
+      //   chunks: ['headerfooter'],
       // }),
       new webpack.ProvidePlugin({
         $: 'jquery',
