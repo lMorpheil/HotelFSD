@@ -24,7 +24,7 @@ const common = merge([
       colors: './src/pages/colors/colors.js',
       forms: './src/pages/forms/forms.js',
       cards: './src/pages/cards/cards.js',
-      'header & footer': './src/pages/header & footer.js',
+      'headerfooter': './src/pages/headerfooter/header & footer.js',
     },
     output: {
       filename: '[name].js',
@@ -73,7 +73,7 @@ const common = merge([
       }),
       new HtmlWebpackPlugin({
         filename: 'header & footer.html',
-        template: './src/pages/header & footer.pug',
+        template: './src/pages/headerfooter/header & footer.pug',
         chunks: ['header & footer'],
       }),
       new webpack.ProvidePlugin({
