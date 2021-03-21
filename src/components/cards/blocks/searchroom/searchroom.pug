@@ -1,9 +1,0 @@
-mixin searchroom(id)
-    .searchroom
-        form.searchroom__form(action="" method="post")
-            h1.searchroom__title Найдём номера под ваши пожелания
-            +date(true,true,"прибытие", "выезд")
-            .searchroom__dropdown
-                +dropdown(`${id}`, "гости", "", "", "", "", "")
-            .searchroom__button
-                +button("подобрать номер","background","dark","arrow")
