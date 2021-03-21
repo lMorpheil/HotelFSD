@@ -23,11 +23,19 @@
 <h2>Ссылки на страницы размещённые на github pages</h2>
 # Ссылки на страницы
 1. [Главная](https://lmorpheil.github.io/HotelFSD/main.html)
-2. [Регистрация](https://lmorpheil.github.io/HotelFSD/registration.html)
-3. [Логин](https://lmorpheil.github.io/HotelFSD/login.html)
-4. [Поиск номера](https://lmorpheil.github.io/HotelFSD/search-room.html)
-5. [детали номера](https://lmorpheil.github.io/HotelFSD/room-details.html)
-6. [Colors](https://lmorpheil.github.io/HotelFSD/colors.html)
-7. [Forms Elements](https://lmorpheil.github.io/HotelFSD/forms.html)
-8. [Cards](https://lmorpheil.github.io/HotelFSD/cards.html)
-9. []()
+2. 
+3. [Регистрация](https://lmorpheil.github.io/HotelFSD/registration.html)
+4. 
+5. [Логин](https://lmorpheil.github.io/HotelFSD/login.html)
+6. 
+7. [Поиск номера](https://lmorpheil.github.io/HotelFSD/search-room.html)
+8. 
+9. [детали номера](https://lmorpheil.github.io/HotelFSD/room-details.html)
+10. 
+11. [Colors](https://lmorpheil.github.io/HotelFSD/colors.html)
+12. 
+13. [Forms Elements](https://lmorpheil.github.io/HotelFSD/forms.html)
+14. 
+15. [Cards](https://lmorpheil.github.io/HotelFSD/cards.html)
+16. 
+17. []()
