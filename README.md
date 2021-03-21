@@ -39,5 +39,5 @@
 
 8. [Cards](https://lmorpheil.github.io/HotelFSD/cards.html)
  
-9. []()
+9. [Header&footer](https://lmorpheil.github.io/HotelFSD/headerfooter.html)
 
