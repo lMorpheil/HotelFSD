@@ -53,7 +53,8 @@
     "start": "webpack-dev-server --env development --open",
     "build": "webpack --env production",
     "serv": "static build",
-    "dev": "webpack --env development"
+    "dev": "webpack --env development",
+    "dep": "gh-pages -d dist"
   },
   "author": "Sergei Novikov",
   "license": "ISC"
