@@ -24,7 +24,7 @@ const common = merge([
       colors: './src/pages/colors/colors.js',
       forms: './src/pages/forms/forms.js',
       cards: './src/pages/cards/cards.js',
-      'headerfooter': './src/pages/headerfooter/header & footer.js',
+      headerfooter: './src/pages/headerfooter/header & footer.js',
     },
     output: {
       filename: '[name].js',
