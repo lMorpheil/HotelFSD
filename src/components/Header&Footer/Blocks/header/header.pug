@@ -1,0 +1,6 @@
+mixin header(login,reg_action, login_action)
+    header.header
+        div(class="header__wrap")
+            +logo("color")
+            div(class="header__wrapper")
+                +menu(login,reg_action, login_action)

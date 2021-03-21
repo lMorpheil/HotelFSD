@@ -1,0 +1,27 @@
+@import "/Blocks/footer/footer.scss";
+@import "/Blocks/header/header.scss";
+@import "/Blocks/menu/menu.scss";
+
+.headerandfooter {
+  background: #F4F4F6;
+  width: 1440px;
+  padding-bottom: 140px;
+}
+.headerandfooter__logo {
+  padding: 30px 0 62px 30px;
+}
+.headerandfooter__header {
+  background: #fff;
+  margin-bottom: 40px;
+}
+.headerandfooter__footer {
+  background: #fff;
+  margin-bottom: 40px;
+}
+.headerandfooter__smile {
+  background: #fff;
+  width: 768px;
+  height: 367px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}

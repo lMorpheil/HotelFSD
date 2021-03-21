@@ -1,0 +1,6 @@
+mixin range(Range)
+    div.range
+        p(class="range__title")
+            label(for="amount" class="range__input_first")=Range
+            input(class="range__input_second" type="text" id="amount" readonly)
+        div(id="slider-range")

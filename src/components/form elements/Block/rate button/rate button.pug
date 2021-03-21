@@ -1,0 +1,6 @@
+mixin ratebutton(rate)
+    div(class="ratebutton" data-ratebutton=`${rate}`)
+        - for ( i = 0; i < rate; i++ )
+            button(class="ratebutton__button_active")
+        - for ( i = 0; i < ( 5 - rate ); i++)
+            button(class="ratebutton__button")

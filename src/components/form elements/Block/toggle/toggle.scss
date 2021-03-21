@@ -1,0 +1,31 @@
+.toggle__input {
+  display: none;
+    +label {
+      font-family: $fMont;
+      font-size: 14px;
+      line-height: 24px;
+      display: inline-flex;
+      align-items: center;
+      color: $Dark75;
+      cursor: pointer;
+    }
+    +label::before {
+      border: 1px solid $Dark25;
+      border-radius: 10px;
+      width: 40px;
+      height: 20px;
+      display: inline-block;
+      content: "";
+      margin-right: 10px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      background: url(../../assets/images/Rectangle-toggle-off.svg) 4px center no-repeat;
+    }
+}
+.toggle__input:checked {
+    +label::before {
+      background: url(../../assets/images/Rectangle-toggle-on.svg) 24px center no-repeat;
+      border: 1px solid $purple;
+    }
+}

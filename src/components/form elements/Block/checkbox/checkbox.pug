@@ -1,0 +1,8 @@
+mixin checkbox(id,text,checked)
+    .checkbox
+        if checked
+            input(type="checkbox" id=`${id}` class="checkbox__input" checked)
+            label(for=`${id}` class="checkbox__label")!= text
+        else
+            input(type="checkbox" id=`${id}` class="checkbox__input")
+            label(for=`${id}` class="checkbox__label")!= text

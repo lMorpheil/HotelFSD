@@ -1,0 +1,11 @@
+mixin button(text, background, dark, arrow, form, id, link, cls)
+    if background
+        if dark
+            button(class="button button__background_dark" class= (cls) ? `${arrow} ${cls}` : `${arrow}` form=`${form}` id=`${id}` type="submit")= text
+        else
+            button(class="button button__background_light" class= (cls) ? `${arrow} ${cls}` : `${arrow}` form=`${form}` id=`${id}` type="submit")= text
+    else
+        if dark
+            button(class=(link ? "button button__link_colorful" : "button button__text_dark") class= (cls) ? `${arrow} ${cls}` : `${arrow}` form=`${form}` id=`${id}` type="submit")= text
+        else
+            button(class=(link ? "button button__link_grey" : "button button__text_light") class= (cls) ? `${arrow} ${cls}` : `${arrow}` form=`${form}` id=`${id}` type="submit")= text

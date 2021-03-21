@@ -1,0 +1,115 @@
+@import "../../components/util/variables.scss";
+@import "../../components/fonts/fonts.scss";
+@import "../../components/form elements/Block/Buttons/Buttons.scss";
+@import "../../components/Header&Footer/Blocks/header/header.scss";
+@import "../../components/Header&Footer/Blocks/footer/footer.scss";
+@import "../../components/Header&Footer/Blocks/menu/menu.scss";
+@import "../../components/Header&Footer/Blocks/footer/Block/Navigation/navigation.scss";
+@import "../../components/Header&Footer/Blocks/footer/Block/footer-logo/footer-logo.scss";
+@import "../../components/Header&Footer/Blocks/footer/Block/subscription/subscription.scss";
+@import "../../components/logo/logo.scss";
+@import "../../components/form elements/Block/range/range.scss";
+@import "../../components/form elements/Block/dropdown/dropdown.scss";
+@import "../../components/form elements/Block/checkbox/checkbox";
+@import "../../components/form elements/Block/rich checkbox buttons/rich checkbox buttons.scss";
+@import "../../components/form elements/Block/checkbox list/checkbox list";
+@import "../../components/form elements/Block/text field/text field.scss";
+@import "../../components/form elements/Block/rate button/rate button.scss";
+@import "../../components/form elements/Block/pagination/pagination.scss";
+@import "../../components/form elements/Block/date dropdown/date dropdown.scss";
+@import "../../components/cards/blocks/room/room.scss";
+
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.search-room {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+  flex: 1 0 auto;
+  @media (max-width: 1170px) {
+    flex-direction: column;
+    padding: 30px 10px 0 10px;
+  }
+}
+.search-room__room > div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  & > div {
+    margin-right: 12px;
+  }
+}
+.search-room__filter {
+  @media (max-width: 1170px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+}
+.search-room__input-wrap {
+  max-width: 266px;
+  padding-bottom: 20px;
+  &:nth-child(2) {
+    padding-bottom: 30px;
+  }
+}
+.search-room__range {
+  padding-bottom: 30px;
+}
+.search-room__title {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: $Dark100;
+  margin-bottom: 21px;
+}
+.search-room__range {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: $Dark50;
+  margin-top: 10px;
+}
+.search-room__description {
+  padding-bottom: 7px;
+}
+.search-room__rules {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $Dark100;
+  margin-bottom: 16px;
+}
+.search-room__checkbox {
+  margin-bottom: 8px;
+  &:first-child {
+    margin-bottom: 15px;
+  }
+  &:last-child {
+    margin-bottom: 30px;
+  }
+}
+.search-room__checkboxlist {
+  padding-top: 30px;
+}
+.search-room__pagination {
+  padding: 22px 0 73px 0;
+  display: flex;
+  justify-content: center;
+}

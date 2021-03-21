@@ -1,0 +1,120 @@
+.menu__burger {
+  display: none;
+  @media (max-width: 905px) {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+.menu__line {
+  @media (max-width: 905px) {
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 15px;
+    &:first-child {
+      top: 0;
+    }
+    &:last-child {
+      top: 30px;
+    }
+  }
+}
+.menu__line_active {
+  display: none;
+}
+.menu__line_before-active {
+  transform-origin: 100%;
+  transform: rotate(-45deg);
+}
+.menu__line_after-active {
+  transform-origin: 100%;
+  transform: rotate(45deg);
+}
+.menu__list {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 447px;
+  list-style: none;
+  @media (max-width: 905px) {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 303px;
+  }
+}
+.menu__link {
+  color: $Dark50;
+  text-decoration: none;
+  &:hover {
+    color: $Dark75;
+    font-weight: bold;
+  }
+}
+.menu__arrow {
+  background: url(../../assets/images/expand_more.svg) center center no-repeat;
+  height: 24px;
+  width: 21px;
+  display: inline-block;
+  line-height: 21px;
+  vertical-align: middle
+}
+.menu__form {
+  width: 87px;
+  height: 34px;
+  &:last-child {
+    width: 197px;
+  }
+}
+.menu__wrapper-name {
+  padding-left: 20px;
+  margin-left: 20px;
+  height: 30px;
+  border-left: 1px solid transparentize($Dark50, 0.4);
+  vertical-align: middle;
+  align-items: center;
+  display: flex;
+}
+.menu__name {
+  font-family: $fMont;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: $Dark50;
+}
+.menu__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  width: 303px;
+  @media (max-width: 905px) {
+    margin: 0;
+  }
+}
+.menu__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 905px) {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    background: white;
+    right: 0;
+    top: 70px;
+    padding: 10px;
+  }
+}
+.menu__wrapper_active {
+  display: block;
+}
