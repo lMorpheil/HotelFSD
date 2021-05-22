@@ -17,6 +17,7 @@ const fonts = require('./webpack/fonts');
 const common = merge([
   {
     entry: {
+      index: './src/index.js',
       main: './src/pages/main/main.js',
       registration: './src/pages/registration/registration.js',
       login: './src/pages/login/login.js',
@@ -32,6 +33,11 @@ const common = merge([
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      new HtmlWebpackPlugin({
+        filename: 'index.html',
+        template: './src/index.pug',
+        chunks: ['index'],
+      }),
       new HtmlWebpackPlugin({
         filename: 'main.html',
         template: './src/pages/main/main.pug',
