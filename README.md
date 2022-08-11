@@ -20,8 +20,8 @@
  1.[Air Datepicker](https://github.com/t1m0n/air-datepicker)
 
  2.[maskedinput](https://github.com/digitalBush/jquery.maskedinput)
+
 <h2>Ссылки на страницы размещённые на github pages</h2>
-# Ссылки на страницы
 
 1. [Главная](https://lmorpheil.github.io/HotelFSD/main.html)
 
